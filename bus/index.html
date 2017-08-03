@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>癒し旅ナビ | バスツアー特集</title>
+<meta charset="utf-8">
+<meta name="keywords" content="旅行,温泉,バスツアー">
+<meta name="description" content="当サイトは、身も心も癒される旅行プランや話題の旅行プランまで、様々な情報を提供するサイトです。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-sp.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var pageTop = $('.page-top');
+    pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+            pageTop.fadeIn();
+        } else {
+            pageTop.fadeOut();
+        }
+    });
+    pageTop.click(function () {
+        $('body, html').animate({scrollTop:0}, 500, 'swing');
+        return false;
+    });
+});
+</script>
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // スムーススクロール//ターゲットの座標からヘッダの高さ分引く
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+        <header>
+        	<div class="header_top">
+                <h1 class="logo">
+                    <img src="images/logo.jpg" alt="癒し旅ナビ">
+                </h1>
+                <div class="sns">
+                    <img src="images/fb.png" alt="facebook">
+                    <a href="https://twitter.com/intent/tweet?button_hashtag=%E7%99%92%E3%81%97%E6%97%85%E3%83%8A%E3%83%93" class="twitter-hashtag-button">
+                      <img src="images/twitter.png" alt="twitter">
+                    </a>
+                </div>
+            </div>
+
+<!-- PC用グローバルナビ -->
+            <nav class="gnav">
+                <ul>
+                    <li><a href="../minpaku"><img src="images/menu1.png" alt="民泊プラン"></a></li>
+                    <li><a href="./index.html"><img src="images/menu2.png" alt="バスツアー"></a></li>
+                    <li><a href="../onsen"><img src="images/menu3.png" alt="温泉旅行"></a></li>
+                    <li><a href="../w_trip"><img src="images/menu4.png" alt="海外旅行"></a></li>
+                </ul>
+            </nav>
+
+            <!-- スマホ用グローバルナビ -->
+            <nav class="gnav_sp">
+                <ul>
+                    <li><a href="..minpaku"><img src="images/menu1.png" alt="民泊プラン"></a></li>
+                    <li><a href="./index.html"><img src="images/menu2.png" alt="バスツアー"></a></li>
+                </ul>
+                <ul>
+                    <li><a href="../onsen"><img src="images/menu3.png" alt="温泉旅行"></a></li>
+                    <li><a href="../w_trip"><img src="images/menu4.png" alt="海外旅行"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+	<div class="top-view">
+		<div class="fv">
+			<figure class="fv_title">
+				<img src="images/first_view.png" alt="バスツアー特集">
+			</figure>
+		</div>
+		<div class="about">
+			<div class="midashi-wrapper cf">
+				<figure class="midashi">
+					<img src="images/midashi.png" alt="見出し">
+					<figcaption>
+					お手軽な料金で一日大満足になれる話題のバスツアーのお得な情報を大特集！<br>食べ放題や果実狩り、日帰り温泉や工場見学など、近隣のエリアで一日遊びつくそう！
+					</figcaption>
+				</figure>
+				<figure class="buspic">
+					<img src="images/bus.png" alt="バス画像">
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<div class="purpose">
+		<h1>目的別で選ぶ</h1>
+		<div class="choices">
+      <div class="choices-top cf">
+        <a href="#kajitugari">
+          <div class="purpose1 cf">
+            <img src="images/peach.jpg" alt="果実狩り">
+            <div class="description">
+              <h2><span class="ka">果</span>実狩り</h2>
+				      <p>桃やいちごなど、旬のフルーツを味わいたい方に。</p>
+            </div>
+          </div>
+        </a>
+        <a href="#gourmet">
+          <div class="purpose2 cf">
+            <img src="images/gourmet.jpg" alt="ご当地グルメ">
+            <div class="description">
+              <h2><span class="go">ご</span>当地グルメ</h2>
+              <p>桃やいちごなど、旬のフルーツを味わいたい方に。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="choices-bottom cf">
+        <a href="#onsen">
+          <div class="purpose3 cf">
+            <img src="images/onsen1.jpg" alt="日帰り温泉">
+            <div class="description">
+              <h2><span class="hi">日</span>帰り温泉</h2>
+              <p>有名温泉地から近場の温泉地に出かけて癒されたい方に。</p>
+            </div>
+          </div>
+        </a>
+        <a href="#koujyou">
+          <div class="purpose4 cf">
+            <img src="images/drinkbeer.jpg" alt="工場見学">
+            <div class="description">
+              <h2><span class="ko">工</span>場見学</h2>
+              <p>桃やいちごなど、旬のフルーツを味わいたい方に。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+	</div>
+
+	<div id="kajitugari">
+		<div class="plan_image_01">
+			<h1 class="plan_name_01">
+				<img src="images/plan_name_01.png" alt="果実狩り">
+			</h1>
+		</div>
+		<div class="plan_image_01_sp"><!-- スマホ用 -->
+			<h1 class="plan_name_01_sp">
+				<img src="images/plan_name_01_sp.jpg" alt="果実狩り">
+			</h1>
+		</div>
+		<div class="place1">
+		  <span class="span1">山梨　勝沼</span>
+		  <h2>桃狩り・ぶどう狩り体験プラン</h2>
+		  <div class="plans cf">
+			<div class="plan1">
+			  <img src="images/momogari.jpg" alt="桃狩り">
+			  <p>桃狩り・・・7月上旬～8月中旬まで<br>ぶどう狩り・・・8月中旬～9月下旬まで</p>
+			</div>
+			<div class="plan2">
+			  <img src="images/onsen2.jpg" alt="温泉">
+			  <p>農園での果実狩りの他、温泉入浴のオプション付きツアーも充実。</p>
+			</div>
+		  </div>
+		</div>
+		<div class="place2">
+			<span class="span2">栃木　千葉　静岡</span>
+			<h2>いちご狩り体験プラン</h2>
+			<div class="plans cf">
+				<div class="plan1">
+					<img src="images/strawberry.jpg" alt="いちご狩り">
+					<p>いちご狩りのシーズンは1月～5月まで</p>
+				</div>
+				<div class="plan2">
+					<img src="images/kaisen.jpg" alt="海鮮">
+					<p>いちご狩り+地元の新鮮な食材を味わうツアーも楽しめます！</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="onsen">
+		<div class="plan_image_02">
+			<h1 class="plan_name_02">
+				<img src="images/plan_name_02.png" alt="日帰り温泉">
+			</h1>
+		</div>
+		<div class="plan_image_02_sp"><!-- スマホ用 -->
+			<h1 class="plan_name_02_sp">
+				<img src="images/plan_name_02_sp.jpg" alt="日帰り温泉">
+			</h1>
+		</div>
+		<div class="place1">
+			<span class="span3">埼玉　秩父　長瀞</span>
+			<h2>歴史ある薬師の湯＋和会席プラン</h2>
+			<div class="plans cf">
+				<div class="plan1">
+					<img src="images/onsen3.jpg" alt="温泉">
+					<p>戦国時代よりある和銅鉱泉は別名「薬師の湯」とも呼ばれており、極上の湯が体を癒してくれます。</p>
+				</div>
+				<div class="plan2">
+					<img src="images/kaiseki.jpg" alt="会席">
+					<p>宿自慢の会席料理も大満足の内容です！</p>
+				</div>
+			</div>
+		</div>
+		<div class="place2">
+			<span class="span4">神奈川　箱根湯本</span>
+			<h2>癒しの日帰り温泉＋マッサージ付きプラン</h2>
+			<div class="plans cf">
+				<div class="plan1">
+					<img src="images/onsen4.jpg" alt="温泉">
+					<p>いちご狩りのシーズンは1月～5月まで</p>
+				</div>
+				<div class="plan2">
+					<img src="images/massage.jpg" alt="マッサージ">
+					<p>いちご狩り＋地元の新鮮な食材を味わうツアーも楽しめます！</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gourmet">
+		<div class="plan_image_03">
+			<h1 class="plan_name_03">
+				<img src="images/plan_name_03.png" alt="日帰り温泉">
+			</h1>
+		</div>
+		<div class="plan_image_03_sp"><!-- スマホ用 -->
+			<h1 class="plan_name_03_sp">
+				<img src="images/plan_name_03_sp.jpg" alt="日帰り温泉">
+			</h1>
+		</div>
+		<div class="place1">
+			<span class="span5">千葉　南房総</span>
+			<h2>伊勢海老と海の幸＋足湯プラン</h2>
+			<div class="plans cf">
+				<div class="plan1">
+					<img src="images/ebi.jpg" alt="伊勢海老">
+					<p>大きな伊勢海老を刺身や炭火焼などで贅沢に味わえるプランは毎年大人気！</p>
+				</div>
+				<div class="plan2">
+					<img src="images/ashiyu.jpg" alt="足湯">
+					<p>グルメやお買い物を楽しんだ後は、足湯で疲れを癒しましょう。</p>
+				</div>
+			</div>
+		</div>
+		<div class="place2">
+			<span class="span6">新潟　湯沢</span>
+			<h2>カニ食べ放題プラン</h2>
+			<div class="plans cf">
+				<div class="plan1">
+					<img src="images/kani.jpg" alt="カニ">
+					<p>大きなカニの身をお腹いっぱい食べられる大人気プラン！</p>
+				</div>
+				<div class="plan2">
+					<img src="images/sake.jpg" alt="日本酒">
+					<p>新潟の美味しい地酒も味わえます。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="koujyou">
+		<div class="plan_image_04">
+			<h1 class="plan_name_04">
+				<img src="images/plan_name_04.png" alt="工場見学">
+			</h1>
+		</div>
+		<div class="plan_image_04_sp"><!-- スマホ用 -->
+			<h1 class="plan_name_04_sp">
+				<img src="images/plan_name_04_sp.jpg" alt="工場見学">
+			</h1>
+		</div>
+		<div class="place1">
+			<span class="span7">静岡　御殿場</span>
+			<h2>ウィスキー醸造所と地ビール工場見学</h2>
+			<div class="plans cf">
+				<div class="plan1">
+					<img src="images/shiro.jpg" alt="醸造所">
+					<p>富士山の麓の美味しい水で醸造されたウィスキーを試飲できる。</p>
+				</div>
+				<div class="plan2">
+					<img src="images/beer.jpg" alt="ビール">
+					<p>地ビール工場で、できたて新鮮な美味しいビールで乾杯！</p>
+				</div>
+			</div>
+		</div>
+		<div class="place2">
+			<span class="span8">山梨　勝沼</span>
+			<h2>信玄餅工場とワイナリー見学</h2>
+			<div class="plans cf">
+				<div class="plan1">
+					<img src="images/shinhgen.jpg" alt="信玄餅">
+					<p>信玄餅工場の楽しみが信玄餅の詰め放題タイム！</p>
+				</div>
+				<div class="plan2">
+					<img src="images/wine.jpg" alt="ワイン">
+					<p>勝沼のワイナリーでは、ワインの試飲とミニボトルのお土産付き。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site">
+		<h1>バスツアーのおすすめ予約・検索サイト</h1>
+		<div class="cf">
+			<div class="site1">
+				<h2><span class="sq">■ </span>旅の発見</h2>
+				<a href="https://tabihatsu.jp/"><img src="images/tabihakken.jpg" alt="旅の発見"></a>
+				<p>近畿日本ツーリストグループの「旅の発見」は日本最大級のテーマ型検索トラベルサイトです。<br>「旅先でこんな事がしたい」<br>「ちょっと近くであんな事がしたい」<br>そんな多様化するニーズに応える10,000件のプランが用意されています！</p>
+			</div>
+			<div class="site2">
+				<h2><span class="sq">■ </span>トラベルコ</h2>
+				<a href="http://www.tour.ne.jp/"><img src="images/traveruko.jpg" alt="トラベルコ"></a>
+				<p>各旅行会社の格安な日帰りバスツアー・旅行・観光の最安値を比較・検索できるサイトです。<br>食べ放題や果実狩り、工場見学ツアーの他、話題の観光地や世界遺産、人気テーマパークへ行くツアーなど、様々なツアーを検索できます！</p>
+			</div>
+		</div>
+	</div>
+	<a href="#top" class="page-top"><img src="images/page_top.png" alt="TOPへ戻る"></a>
+	<footer>
+		<div class="link">
+			<ul>
+				<li><a href="../minpaku"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;民泊プラン</a></li>
+				<li><a href="./index.html"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;日帰りバスツアー</a></li>
+				<li><a href="../onsen"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;温泉旅行</a></li>
+				<li><a href="../w_trip"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;海外女子旅</a></li>
+				<li><a href=""><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;facebook</a></li>
+				<li><a href="https://twitter.com/intent/tweet?button_hashtag=%E7%99%92%E3%81%97%E6%97%85%E3%83%8A%E3%83%93" class="twitter-hashtag-button"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>&nbsp;twitter</a></li>
+			</ul>
+		</div>
+		<small class="copyright">Copyright &copy;癒し旅ナビ</small>
+	</footer>
+</div><!--.wrapper>
+
+</body>
+</html>

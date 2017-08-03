@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="description" content="サイト紹介文">
+<meta name="keyword" content="サイト紹介文">
+<title>癒し旅ナビ</title>
+<link href="css/travel.css" rel="stylesheet" type="text/css">
+<link href="css/smart.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<link href="js/jquery.bxslider.css" rel="stylesheet" />
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/reßspond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+$(function() {
+    var topBtn = $('#pageTop');
+    topBtn.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                auto: true, 
+		mode: 'fade',
+		pause: 5000,
+            });
+        });
+</script>
+
+</head>
+<body>
+<div class="wrap">
+<!-- Main Container -->
+	<div class="container">
+        <!--ヘッダー-->
+        <header class="PC">
+		<h4 class="logo">
+          	  <img src="images/logo.jpg" alt="いやしたび">	
+		 </h4>
+          <!-- social button -->
+            <ul class="social_link">
+               
+      			<li class="icon_facebook"><a href="https://twitter.com/intent/tweet?hashtags=iyashitabi_navi" target="_blank">
+      				  <img src="images/fb.png" alt="facebook" title="facebook"></a></li>
+      			 <li class="icon_twitter"><a href="https://twitter.com/intent/tweet?hashtags=iyashitabi_navi" target="_blank">
+    				  <img src="images/twitter.png" alt="facebook" title="facebook"></a></li>
+             </ul>
+         
+        
+         <!-- Navigation --> 
+            <nav>
+               <li><a href=""><img src="images/menu1.png" alt="民泊"></a></li>
+               <li><a href=""><img src="images/menu2.png" alt="日帰り"></a></li>
+               <li><a href="../onsen/"><img src="images/menu3.png" alt="温泉"></a></li>
+               <li><a href=""><img src="images/menu4.png" alt="海外女子旅"></a></li>
+            </nav>
+             
+        
+        </header>
+    
+    
+<!-- slide --> 
+<section class="topnews">
+	 
+	<div class="main_image_title">
+               <img src="images/title.gif">
+       </div>  
+	<ul class="bxslider">    
+		<li><img title="" alt="" src="images/slide01.gif"></li>
+  		<li><img title="" alt="" src="images/slide02.gif"></li>
+  		<li><img title="" alt="" src="images/slide03.gif"></li>
+  		<li><img title="" alt="" src="images/slide04.gif"></li>
+	</ul>
+</section>
+
+
+<!-- 民泊とは --> 
+<section class="insert">
+	<div class="minpaku-t">
+		<h1><a href="#"><span>まず民泊とは？</span></a></h1>
+		<h3>宿泊が認められている古民家や農家等に気軽に泊まれる新しい旅のスタイルで、ホテルや旅館などの宿泊施設とは異なり、空き家や一般の住居のお部屋に宿泊することになります。</h3> 
+	</div>
+	
+	<div class="stay">       
+		<img title="" alt="" src="images/19bf69f919d06c082a2508fa59cfae84_m.jpg">
+	</div>
+</section>
+
+<!-- 夏休み --> 
+<section class="vacance">
+	<div class="title">
+		<h2><a href="#"><span>山村の古民家ゲストハウスでのんびり夏休み</span></a></h2>
+	</div>
+	<div class="stay">       
+		<img title="" alt="" src="images/slide02.jpg">
+  	</div>
+	<div class="sentence">
+		 <p>宿泊が認められている古民家や農家等に気軽に泊まれる新しい旅のスタイルで、ホテルや旅館などの宿泊施設とは異なり、空き家や一般の住居のお部屋に宿泊することになります。</p> 
+	</div>
+
+</section>
+<!-- 予定１ -->
+ <div class="PCc"> 
+<section class="example">
+	<div class="e-s">
+		<h5><a href="#"><span>1日のスケジュール例</span></a>
+	</div>
+	<div class="sentence">
+		<ol>
+		 	<li><div class="schedule"><div class="anker"><img title="" alt="" src="images/sun1.gif"></div><div class="anker-s"><h9>自然あふれる山間の道を進み<br>目的地のゲストハウスに到着。</h9></div></div></li>
+			<li><div class="schedule2"><div class="anker"><img title="" alt="" src="images/sun2.gif"></div><div class="anker-s"><h9>スタッフから説明後、夕食用の<br>野菜を収穫しに畑へ出発。<br> 他のゲストと楽しく農業体験。</h9></div></div></li>
+			<li><div class="schedule3"><div class="anker"><img title="" alt="" src="images/sun3.gif"></div><div class="anker-s"><h9>新鮮な食材を使った美味しいBBQ<br>をゲストハウスのみんなと味わいま<br>しょう。よく冷えたビールも一緒に<br>どうぞ。</h9></div></div></li>
+			<li><div class="schedule4"><div class="anker"><img title="" alt="" src="images/sun4.gif"></div><div class="anker-s"><h9>食事の片付けが済んだら自由時間。<br>満天の星空を見に散策したり、お酒<br>を飲みながら他のゲストと語り合う<br>など、自由に夜の時間を楽しみまし<br>ょう。</h9></div></div></li>
+		</ol>
+
+	</div>
+
+	<div class="stay">       
+		<img title="" alt="" src="images/lodge.gif">
+<img title="" alt="" src="images/tomato.gif">
+<img title="" alt="" src="images/bbq.gif">
+<img title="" alt="" src="images/c2ede770eb424cd35a79b68232cc6d29_s.jpg">
+  	</div>
+</div>	
+</section>
+ 
+<div class="SPc"> 
+<section class="example">
+	<div class="e-s">
+		<h5><a href="#"><span>1日のスケジュール例</span></a>
+	</div>
+	<div class="sentence">
+		<ol>
+		 	<li><img title="" alt="" src="images/lodge.gif"><div class="schedule"><div class="anker"><img title="" alt="" src="images/sun1.gif"></div><div class="anker-s"><h9>自然あふれる山間の道を進み目的地のゲストハウスに到着。</h9></div></div></li>
+			<li><img title="" alt="" src="images/tomato.gif"><div class="schedule2"><div class="anker"><img title="" alt="" src="images/sun2.gif"></div><div class="anker-s"><h9>スタッフから説明後、夕食用の野菜を収穫しに畑へ出発。他のゲストと楽しく農業体験。</h9></div></div></li>
+			<li><img title="" alt="" src="images/bbq.gif"><div class="schedule3"><div class="anker"><img title="" alt="" src="images/sun3.gif"></div><div class="anker-s"><h9>新鮮な食材を使った美味しいBBQをゲストハウスのみんなと味わいましょう。よく冷えたビールも一緒にどうぞ。</h9></div></div></li>
+			<li><img title="" alt="" src="images/c2ede770eb424cd35a79b68232cc6d29_s.jpg"><div class="schedule4"><div class="anker"><img title="" alt="" src="images/sun4.gif"></div><div class="anker-s"><h9>食事の片付けが済んだら自由時間。満天の星空を見に散策したり、お酒を飲みながら他のゲストと語り合うなど、自由に夜の時間を楽しみましょう。</h9></div></div></li>
+		</ol>
+</div>	
+</section>
+</div>
+<!-- 　沖縄 --> 
+<section class="vacance">
+	<div class="title">
+		<h11><a href="#"><span>ゆったり沖縄時間を過ごす</span></a></h11>
+	</div>
+	<div class="stay">       
+		<img title="" alt="" src="images/7a34a0a53b156ec4058b232a3e71ce6e_s.jpg">
+  	</div>
+	<div class="sentence">
+		 <p> 沖縄での民泊の魅力は、宿からしか行けないきれいなビーチや穴場の絶景スポットです。ホストさんが知っているとっおきの場所を教えてもらいましょう。宿によっては三線の演奏や漁業も体験も可能です。</p> 
+	</div>
+
+</section>
+<!-- 予定２ -->
+<div class="PCa"> 
+<section class="example">
+	<div class="e-s">
+		<h5><a href="#"><span>1日のスケジュール例</span></a>
+	</h5></div>
+	<div class="sentence">
+		<ol>
+		 	<li><div class="schedule5"><div class="anker"><img title="" alt="" src="images/sun1.gif"></div><div class="anker-s"><h9>起床後、ゲストとスタッフみんなで<br>沖縄の伝統的な朝ごはんを準備。</h9></div></div></li>
+			<li><div class="schedule6"><div class="anker"><img title="" alt="" src="images/sun2.gif"></div><div class="anker-s"><h9>食後は島内観光や自由な時間を<br>
+   楽しみましょう。</h9></div></div></li>
+			<li><div class="schedule7"><div class="anker"><img title="" alt="" src="images/sun3.gif"></div><div class="anker-s"><h9>昼食後は、スタッフが知る穴場の <br>ビーチへ出発。沖縄の美しい海で <br>思い出に残るひと時を過ごしまし<br>
+ょう。</h9></div></div></li>
+			<li><div class="schedule8"><div class="anker"><img title="" alt="" src="images/sun4.gif"></div><div class="anker-s"><h9>よく遊んだ一日の終わりには、美<br>
+   味しい沖縄料理を味わいながら、<br>
+   他のゲストと楽しい夜をすごしま<br>
+   しょう。</h9></div></div></li>
+		</ol>
+
+	</div>
+
+	<div class="stay">       
+		<img title="" alt="" src="images/weed.gif">
+<img title="" alt="" src="images/schuloss.gif">
+<img title="" alt="" src="images/NKJ52_ishigakijimanoumi.jpg">
+<img title="" alt="" src="images/dish.gif">
+  	</div>
+	
+</section> 
+</div> 
+
+<div class="SPc"> 
+<section class="example">
+	<div class=e-s>
+		<h5><a href="#"><span>1日のスケジュール例</span></a>
+	</div>
+	<div class="sentence">
+		<ol>
+		 	<li><img title="" alt="" src="images/weed.gif"><div class="schedule5"><div class="anker"><img title="" alt="" src="images/sun1.gif"></div><div class="anker-s"><h9>起床後、ゲストとスタッフみんなで沖縄の伝統的な朝ごはんを準備。</h9></div></div></li>
+			<li><img title="" alt="" src="images/schuloss.gif"><div class="schedule6"><div class="anker"><img title="" alt="" src="images/sun2.gif"></div><div class="anker-s"><h9>食後は島内観光や自由な時間を
+   楽しみましょう。</h9></div></div></li>
+			<li><img title="" alt="" src="images/NKJ52_ishigakijimanoumi.jpg"><div class="schedule7"><div class="anker"><img title="" alt="" src="images/sun3.gif"></div><div class="anker-s"><h9>昼食後は、スタッフが知る穴場のビーチへ出発。沖縄の美しい海で思い出に残るひと時を過ごしましょう。</h9></div></div></li>
+			<li><img title="" alt="" src="images/dish.gif"><div class="schedule8"><div class="anker"><img title="" alt="" src="images/sun4.gif"></div><div class="anker-s"><h9>よく遊んだ一日の終わりには、美味しい沖縄料理を味わいながら、他のゲストと楽しい夜をすごしましょう。</h9></div></div></li>
+		</ol>
+</div>	
+</section>
+</div>
+<!-- 情報提供 -->
+<section class="info">
+	<div class="info-t">
+		<h6><a href="#"><span>情報提供</span></a></h6>
+	</div>
+
+	<div class="info-s">
+		<div id="phone">
+			<h31> 民泊予約専門サイト</h31>
+		</div>
+		<div id="smart">
+			<h32>とまりーな</h32>
+		</div>
+		<div id="who">
+			<h33>日本全国の民泊に関する専門サイトです。<br> 地域別・目的別で宿泊先を探せます。</h33>
+		</div>
+	</div>
+
+	<div class="info-i">       
+		<a href="" target="_blank"><img title="" alt="" src="images/201511271248124832.png"></a>
+  	</div>
+	
+</section> 
+	
+<!-- フッタ -->
+<div id="footer"><address>Copyright &copy HTMQ All Rights Reserved.</address></div>
+
+<a id="pageTop" href="#" style="display: block;"><span></span></a>
+
+</div></div></body></html>

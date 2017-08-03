@@ -1,0 +1,463 @@
+html{
+	font-size:100%;
+	min-height:100%;
+  	position:relative;
+}
+
+body{
+	-webkit-text-size-adjust: 100%;
+	width:100%;
+	margin:0 auto 5em;
+	padding:0px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:100%;
+	color:#3F3F3F;
+	line-height:19px;
+}
+
+/* PC&タブレット端末向けCSS */
+@media screen and (min-width:768px) {
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+	background-attachment:fixed;
+	background-position:center center;
+}
+
+
+header{
+	width: 100%;
+	background:#FFF;
+	position:fixed;
+	z-index:1001;
+	margin:0 auto;
+	box-shadow: 0 0 5px #555;
+	-moz-box-shadow: 0 0 5px #555;
+	-o-box-shadow: 0 0 5px #555;
+	-ms-box-shadow: 0 0 5px #555;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=0, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=270, strength=3, enabled=true);
+}
+
+.header_top{
+	display:table;
+}
+
+.header_top h1{
+	margin:0;
+	padding:0;
+	display:table-cell;
+	width:17%;
+	vertical-align:top;
+	*display:inline;
+	*zoom:1;
+}
+
+.header_top h1 img{
+	width:90%
+}
+
+.sns{
+	text-align:right;
+	position: relative;
+	right:5%;
+	display:table-cell;
+	width:80%;
+	vertical-align:top;
+	*display:inline;
+	*zoom:1;
+}
+
+.sns img{
+	display:inline-block;
+	margin:10px 10px 0 0;
+	*display:inline;
+	*zoom:1;
+}
+
+.gnav{
+	padding:5px 0;
+}
+
+.gnav ul{
+	list-style:none;
+	display:table;
+	border-collapse:separate;
+	table-layout:fixed;
+	margin:0 auto;
+}
+
+.gnav li{
+	display:table-cell;
+	*display:inline;
+	*zoom:1;
+}
+
+.gnav li img{
+	width:80%;
+}
+
+.gnav_sp{
+	display:none;
+}
+
+
+/*PC用メインイメージ*/
+.first_view_pc{
+	padding:15% 0 50px;
+	margin: auto;
+	text-align: center;
+	max-width:1200px;
+}
+.first_view_pc img{
+	width: 45%;
+	margin: 10px auto -5%;
+			    animation: fadeIn 2s ease 0s 1 normal;
+			    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+			@keyframes fadeIn {
+	    0% {opacity: 0}
+	    100% {opacity: 1}
+}
+			@-webkit-keyframes fadeIn {
+	    0% {opacity: 0}
+	    100% {opacity: 1}
+}
+
+video#bgvid_pc {
+  position: fixed; left: 0; bottom: 0;
+  min-width: 100%;
+	min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+	margin: 0; padding: 0;
+  background: url(video/image.png) no-repeat;
+  background-size: cover;
+}
+.first_view_sp{
+	display:none;
+}
+
+/*コンテンツ*/
+#main_contents{
+	width:100%;
+	background:rgba(255,255,255,.9);
+	height:auto;
+	margin:0 auto;
+}
+
+#contents01{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+#contents01 h1{
+	max-width:1100px;
+	margin:0;
+}
+
+#contents01 h1 img{
+	display:block;
+}
+
+#contents01 h1 span{
+	display:none;
+}
+
+#about_minpaku{
+	display:table;
+	max-width:1100px;
+	margin:0 auto;
+	padding:3%;
+}
+
+.about_minpaku_lr{
+	display:table-cell;
+	float:left;
+	width:100%;
+}
+
+.about_minpaku_title img{
+	margin:auto;
+	width: 75%;
+    padding: 3%;
+}
+
+.about_minpaku_l,
+.about_minpaku_r{
+	display:table-cell;
+	vertical-align:middle;
+	width:48%;
+
+}
+
+.about_minpaku_l p{
+	width:65%;
+	margin:0 auto;
+	font-size:90%;
+	line-height:25px;
+}
+
+.about_minpaku_r img{
+	width:80%;
+	margin:0 auto;
+}
+
+#contents02{
+	width:100%;
+	background-color:#ffffff;
+	height:auto;
+}
+
+#contents02 h1 img,
+#contents02 h2 img{
+	display:block;
+	margin:auto;
+	width:100%;
+}
+
+#contents02 h1 span,
+#contents02 h2 span{
+	display:none;
+}
+
+#plan01{
+    max-width:1200px;
+	margin:0 auto;
+	padding:40px 20px 20px 20px;
+}
+
+#plan02{
+	max-width:1200px;
+	margin:0 auto;
+	padding:20px;
+}
+
+.backcolor{
+	width:100%;
+	margin:auto;
+	background-color:#EEEEEE;
+}
+
+.backcolor h1{
+	margin:auto;
+}
+
+
+.backcolor2{
+	width:70%;
+	margin:auto;
+	padding: 2% 0;
+}
+
+.plan01_box{
+	border: solid 2px #ffffff;
+	padding:5px;
+}
+
+.plan01_lr,
+.plan02_lr,
+.plan03_lr{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	border-collapse:separate;
+	border-spacing:5px;
+}
+
+.plan01_1,
+.plan01_2,
+.plan01_3,
+.plan01_4,
+.plan02_1,
+.plan02_2,
+.plan02_3,
+.plan02_4,
+.plan03_1,
+.plan03_2,
+.plan03_3,
+.plan03_4{
+	display: table-cell;
+    vertical-align:middle;
+    text-align: left;
+}
+
+/*旅行画像*/
+
+.plan01_2 img,
+.plan01_4 img,
+.plan02_1 img,
+.plan02_3 img,
+.plan03_2 img,
+.plan03_4 img{
+	width:100%;
+}
+
+/*矢印*/
+
+.plan01_1 img,
+.plan01_3 img,
+.plan03_1 img,
+.plan03_3 img{
+	width:20%;
+	padding-left:70%;
+}
+
+.plan02_2 img,
+.plan02_4 img{
+    width:20%;
+	padding-left:10%;
+}
+
+.plan01_1 p,
+.plan01_3 p,
+.plan02_2 p,
+.plan02_4 p,
+.plan03_1 p,
+.plan03_3 p{
+	width:100%;
+	font-size:90%;
+	display:inline-block;
+	margin-top:20%;
+}
+
+#slide02{
+    width: 100%;
+	margin:20px auto;
+	background-color:#EEEEEE;
+    padding: 40px 0;
+}
+
+.slide02_box{
+    width: 99%;
+    margin: auto;
+}
+
+footer{
+	bottom: 0;
+	height: 5em;
+	line-height: 5em;
+	position: absolute;
+	text-align:center;
+	padding:0;
+	width:100%;
+	background-color: #38384B;
+}
+
+footer small{
+	font-size:70%;
+	margin:0 auto;
+	color:#FFFFFF;
+}
+
+}
+
+/* 端末共通CSS */
+
+.plan02_box{
+	display:table;
+	border-collapse: collapse;
+	border:solid 2px #808080;
+	width:100%;
+}
+
+
+.plan02_schedule_all{
+	display: table-row;
+	border:solid 2px #808080;
+
+}
+
+.plan02_schedule_detail{
+	width: 60%;
+	margin:auto;
+	padding:10px 0;
+
+}
+
+.plan02_schedule_detail_title{
+	width: 50%;
+	margin:0 auto;
+}
+
+.plan02_schedule_detail_title img{
+	width: 100%;
+}
+
+
+.plan02_schedule_detail .text{
+	display: table-cell;
+	width: 35%;
+	vertical-align: middle;
+	padding:0 4%;
+	font-size: 82%;
+}
+
+.plan02_schedule_detail .gazou{
+	display: table-cell;
+	width: 30%;
+	text-align:center;
+}
+
+.gazou img{
+	width:80%;
+}
+
+.reservation{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:20px 20px 40px 20px;
+}
+
+.reservation_box{
+    width: 100%;
+    border: solid 2px #808080;
+}
+
+.reservation-contents{
+    display: table;
+    padding: 5% 10%;
+	margin:5% auto;
+    background-color:#EEEEEE;
+}
+
+.site-text{
+	display: table-cell;
+	font-weight: bold;
+	padding-right: 5%;
+    vertical-align: middle;
+}
+
+.title2{
+	margin-bottom: 15px;
+}
+
+.site-name{
+	font-size: 25px;
+	margin-top: 0px;
+}
+
+.site-gazou{
+	display: table-cell;
+	vertical-align: middle;
+    text-align: center;
+    width: 50%;
+}
+
+.site-gazou img{
+    width: 80%;
+}
+
+#anchor_link{
+	text-align: right;
+	position: fixed;
+	bottom:10%;
+	right:2%;
+	z-index: 1;
+}
+
+#anchor_link img{
+    width: 50%;
+}
+}

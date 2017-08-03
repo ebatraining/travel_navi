@@ -1,0 +1,596 @@
+html{
+	font-size:100%;
+	min-height:100%;
+  	position:relative;
+}
+
+body{
+	-webkit-text-size-adjust: 100%;
+	width:100%;
+	margin:0 auto 5em;
+	padding:0px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:100%;
+	color:#3F3F3F;
+}
+
+/* PC&タブレット端末向けCSS */
+@media screen and (min-width:768px) {
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+	background-attachment:fixed;
+	background-position:center center;
+	overflow: hidden;
+}
+
+.pre-header{
+	width: 100%;
+}
+
+header{
+	width: 100%;
+	background:#FFF;
+	position:fixed;
+	z-index:1001;
+	margin:0 auto;
+	box-shadow: 0 0 5px #555;
+	-moz-box-shadow: 0 0 5px #555;
+	-o-box-shadow: 0 0 5px #555;
+	-ms-box-shadow: 0 0 5px #555;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=0, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=270, strength=3, enabled=true);
+}
+
+
+.header_top{
+	display:table;
+}
+
+.header_top h1{
+	margin:0;
+	padding:0;
+	display:table-cell;
+	width:17%;
+	vertical-align:top;
+	*display:inline;
+	*zoom:1;
+}
+
+.header_top h1 img{
+	width:90%
+}
+
+.sns{
+	text-align:right;
+	position: relative;
+	right:5%;
+	display:table-cell;
+	width:80%;
+	vertical-align:top;
+	*display:inline;
+	*zoom:1;
+}
+
+.sns img{
+	display:inline-block;
+	margin:10px 10px 0 0;
+	*display:inline;
+	*zoom:1;
+}
+
+.gnav{
+	padding:5px 0;
+}
+
+.gnav ul{
+	list-style:none;
+	display:table;
+	border-collapse:separate;
+	table-layout:fixed;
+	margin:0 auto;
+}
+
+.gnav li{
+	display:table-cell;
+	*display:inline;
+	*zoom:1;
+}
+
+.gnav li img{
+	width:80%;
+}
+
+.gnav_sp{
+	display:none;
+}
+
+#main_contents{
+	width:100%;
+	background:rgba(255,255,255,.9);
+	height:auto;
+	margin:0 auto;
+}
+
+.first_view_pc{
+	padding:200px 0 50px;
+	margin:0 auto;
+	max-width:80%;
+	
+}
+
+.first_view_pc img{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	padding-top: 0;
+	margin-left: auto;
+	margin-right: auto
+	
+}
+
+.first_view_sp{
+	display:none;
+}
+
+#contents01{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+#contents01 h1{
+	max-width:1100px;
+}
+
+#contents01 h1 img{
+	display:block;
+}
+
+#contents01 h1 span{
+	display:none;
+}
+
+#about_minpaku{
+	max-width:1100px;
+	margin:0 auto;
+	padding:3%;
+}
+
+.about_minpaku_lr{
+	display:table;
+	border-collapse:separate;
+	table-layout:fixed;
+	border-spacing:10px;
+}
+
+.about_minpaku_l,
+.about_minpaku_r{
+	display:table-cell;
+	vertical-align:middle;
+	width:48%;
+}
+
+.about_minpaku_l p{
+	width:90%;
+	margin:0 auto;
+}
+
+.about_minpaku_r img{
+	width:90%;
+	margin:0 auto;
+}
+
+#contents02{
+	width:100%;
+	background:#FFFFFF;
+	height:auto;
+}
+
+#contents02 h1,
+#contents02 h2{
+	width:100%;
+}
+
+#contents02 h1 img,
+#contents02 h2 img{
+	display:block;
+}
+
+#contents02 h1 span,
+#contents02 h2 span{
+	display:none;
+}
+
+#plan01,
+#plan02{
+	max-width:1100px;
+	margin:0 auto;
+	padding:3%;
+}
+
+.plan01_lr,
+.plan02_lr{
+	display:table;
+	border-collapse:separate;
+	table-layout:fixed;
+	border-spacing:10px;
+}
+
+.plan01_l,
+.plan02_l{
+	display:table-cell;
+	vertical-align:middle;
+	width:48%;
+	text-align:right;
+}
+
+.plan01_r,
+.plan02_r{
+	display:table-cell;
+	vertical-align:middle;
+	width:48%;
+	text-align:left;
+}
+
+.plan01_l img,
+.plan02_l img{
+	width:90%;
+}
+
+.plan01_r p,
+.plan02_r p{
+	width:90%;
+	margin:0 auto;
+}
+
+.plan01_schedule,
+.plan02_schedule{
+	margin-top:5%;
+}
+
+.plan01_schedule img,
+.plan02_schedule img{
+	width:100%;
+}
+
+.title-gazou{
+	width: 90%;
+}
+
+footer{
+	bottom: 0;
+	height: 5em;
+	line-height: 5em;
+	position: absolute;
+	text-align:center;
+	padding:0;
+	width:100%;
+	background-color: #38384B;
+}
+
+footer small{
+	font-size:70%;
+	margin:0 auto;
+	color:#FFFFFF;
+}
+
+}
+
+/* 端末共通CSS */
+.plan01_schedule_detail,
+.plan02_schedule_detail{
+	display: table;
+	width: 65%;
+	margin:0 auto;
+
+}
+
+.plan01_schedule_detail .number,
+.plan02_schedule_detail .number{
+	display: table-cell;
+	width:5%;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.plan01_schedule_detail .text,
+.plan02_schedule_detail .text{
+	display: table-cell;
+	width: 35%;
+	vertical-align: middle;
+	padding:0 4%;
+}
+
+.plan01_schedule_detail .gazou,
+.plan02_schedule_detail .gazou{
+	display: table-cell;
+	width: 30%;
+	text-align:center;
+}
+
+.gazou img{
+	width:80%;
+}
+
+.reservation{
+	width: 70%;
+	margin:0 auto;
+	margin-top: 5%;
+	padding-bottom:100px;
+}
+
+.reservation h2{
+	width: 100%;
+	border-bottom: 2px solid #65C59D;
+	color: #1E90FF;
+}
+
+.reservation-contents{
+	width: 90%;
+	margin:0 auto;
+	display: table;
+}
+
+.site-text{
+	display: table-cell;
+	width: 55%;
+	font-weight: bold;
+	padding-right: 3%;
+	padding-right: 0px;
+}
+
+.title2{
+	margin-bottom: 0px;
+}
+
+.site-name{
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+.site-gazou{
+	display: table-cell;
+	width: 40%;
+	vertical-align: middle;
+
+}
+
+#anchor_link{
+	text-align: right;
+	position: fixed;
+	bottom:10%;
+	right:2%;
+	z-index: 1;
+}
+
+/*-----ここから温泉旅行特集-----*/
+
+ul, li {
+  list-style: none;
+}
+
+/* CSS Document */
+
+.main_image {
+  padding: 20px 0;
+}
+#main {
+  width: 800px;
+  margin: 0 auto;
+}
+#main .sab_menu li {
+  display: inline-block;
+}
+article {
+  width: 800px;
+  color: #8E8E8E;
+  font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+article section {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 0px 20px 20px;
+  width: 241px;
+}
+article h1 {
+  font-size: 43px;
+  font-weight: 100;
+  margin-top: 30px;
+}
+article h2 {
+  font-weight: 100;
+  }
+article section p {
+  width: 87%;
+  font-size: 84%;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+article section img {
+  margin: 10px 0;
+}
+article section#rotennburo {
+  margin: 0 3px;
+}
+.kakomi {
+  width: 350px;
+  height: 240px;
+  border-radius: 10px;
+  border: 1px #8E8E8E solid;
+  background-color: #FFF;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.kakomi section {
+  color: #8E8E8E;
+  font-family: "HiraginoSans-W0", "ヒラギノ角ゴシック W0";
+  padding: 10px 15px;
+}
+.kakomi section h1 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.kakomi section h2 {
+  font-size: 21px;
+  margin: 5px 0;
+}
+.kakomi section p {
+  font-size: 13.5px;
+  line-height: 1.2;
+}
+.kakomi section img {
+  margin-top: -12px;
+  
+}
+.kakomi section .meitetu {
+  margin-top: 10px;
+}
+
+a .alpha {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+
+ /* PC向け */
+@media screen and (min-width: 769px) {
+
+
+ .main_image {
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+   }
+ 
+   }
+    
+    
+    
+    
+/* タブレット向け */    
+@media screen and (max-width: 768px) {
+
+img{
+ max-width: 100%;
+ height: auto;　
+ }
+
+ #main {
+   width: 90%;
+   }
+ #main .sab_menu {
+   width: 100%;
+   }
+ #main .sab_menu li{
+   width: 30%;
+   height: auto;
+   }
+ #main .sab_menu img {
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+   }
+  article {
+    width: 100%;
+    }
+  article section {
+    width: 28%;
+    max-width: 100%;
+    height: auto;
+    }
+  article h1 {
+    font-size: 220%;
+    }
+  article section h2 {
+    font-size: 120%;
+    }
+  .kakomi {
+    max-width: 100%;
+    width: 44%;
+    height: auto;
+    }
+
+}
+
+
+
+
+/*  スマホ向け */
+@media screen and (max-width: 640px) {
+img{
+max-width: 100%;
+height: auto;　
+}
+article {
+    width: 100%;
+    }
+  article section {
+    width: 27%;
+    max-width: 100%;
+    height: auto;
+    }
+  article h1 {
+    font-size: 200%;
+    }
+  article section h2 {
+    font-size: 89%;
+    }
+  #pettoto {
+    margin-bottom: 30px;
+	}
+  .kakomi {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+	margin-top: 0;
+	margin-bottom: 60px;
+    }
+   #one, #two, #three {
+    margin-top: -50px;
+    padding-top: 50px;
+    }
+}
+
+/* スマホのみ */
+@media screen and (max-width: 440px) {
+  #main .sab_menu ul{
+    margin-left: 30px;
+    }
+  #main .sab_menu li {
+    width: 85%;
+    }
+    
+  article section {
+    width: 87%;
+    max-width: 100%;
+    }
+  article h1 {
+    font-size: 180%;
+    text-align: center;
+    color: #3D3D3D
+    }
+  article section {
+    text-align: center;} 
+  
+  article section h2 {
+    font-size: 150%;
+    }
+  article section p {
+    font-size: 95%;
+    }
+ .kakomi {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    }
+
+}
+  
+ 

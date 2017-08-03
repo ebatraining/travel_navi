@@ -1,0 +1,144 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  list-style: none;
+}
+
+/* CSS Document */
+
+
+#contaner {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.sns {
+  margin-top: -55px;
+}
+ul.sns {
+  height: 120px;
+  
+}
+ul.sns li {
+ display: inline-block;
+ float: right;
+}
+ul.sns .facebook {
+  margin-right: 5px;
+}
+nav.menu ul {
+  text-align:center;
+}
+nav.menu li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.main_image {
+  padding: 20px 0;
+}
+#main {
+  width: 800px;
+  margin: 0 auto;
+}
+#main .sab_menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+article {
+  width: 800px;
+  color: #8E8E8E;
+  font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif; 
+}
+article section {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 0px 20px 20px;
+  width: 241px;
+}
+article h1 {
+  font-size: 43px;
+  font-weight: 100;
+  margin-top: 30px;
+}
+article h2 {
+  font-weight: 100;
+  }
+article section p {
+  width: 87%;
+  font-size: 84%;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+article section img {
+  margin: 10px 0;
+}
+article section#rotennburo {
+  margin: 0 3px;
+}
+.kakomi {
+  width: 350px;
+  height: 240px;
+  border-radius: 10px;
+  border: 1px #8E8E8E solid;
+  background-color: #FFF;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-top: 50px; 
+}
+.kakomi section {
+  color: #8E8E8E;
+  font-family: "HiraginoSans-W0", "ヒラギノ角ゴシック W0";
+  padding: 10px 15px;
+}
+.kakomi section h1 {
+  font-size: 14px;
+  font-weight: 100;
+}
+.kakomi section h2 {
+  font-size: 21px;
+  margin: 5px 0;
+}
+.kakomi section p {
+  font-size: 13.5px;
+  line-height: 1.2;
+}
+.kakomi section img {
+  margin-top: 15px;
+}
+.kakomi section .meitetu {
+  margin-top: 45px;
+}
+.top_btn img {
+ max-width: 70%;
+ padding-left: 92%;
+ margin-right: 2%;
+}
+a .alpha {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+a:hover .alpha {
+  opacity: 0.4;
+  filter: alpha(opacity=60);
+}
+footer {
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
+  background-color: #A6A6A6;
+  }
+  footer p {
+    padding: 40px 0;
+    letter-spacing: 1px;
+  }

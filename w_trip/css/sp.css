@@ -1,0 +1,426 @@
+
+
+/* スマホ向けCSS */
+@media screen and (max-width:767px) {
+
+#wrapper{
+	width:100%;
+	height: 100%;
+	margin:0 auto;
+	padding: 0; margin: 0;
+	background-attachment:fixed;
+	background-position:center center;
+}
+
+header{
+	width:100%;
+	background:#FFF;
+	position:static;
+	margin:0 auto;
+	box-shadow: 0 0 5px #555;
+	-moz-box-shadow: 0 0 5px #555;
+	-o-box-shadow: 0 0 5px #555;
+	-ms-box-shadow: 0 0 5px #555;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=0, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=270, strength=3, enabled=true);
+}
+
+
+.header_top{
+	display:table;
+}
+
+.header_top h1{
+	margin:0;
+	padding:0;
+	display:table-cell;
+	width:30%;
+	vertical-align:top;
+	*display:inline;
+	*zoom:1;
+}
+
+.header_top h1 img{
+	width:90%
+}
+
+.sns{
+	text-align:right;
+	display:table-cell;
+	width:80%;
+	vertical-align:top;
+	*display:inline;
+	*zoom:1;
+}
+
+.sns img{
+	display:inline-block;
+	width:12%;
+	margin:10px 10px 0 0;
+	*display:inline;
+	*zoom:1;
+}
+
+.gnav{
+	display:none;
+}
+
+.gnav_sp{
+	display:block;
+	width:100%;
+}
+
+.gnav_sp ul{
+	list-style:none;
+	display:table;
+	border-collapse:separate;
+	table-layout:fixed;
+	margin:0 auto;
+	padding-left:15%;
+	width:80%;
+}
+
+.gnav_sp li{
+	display:table-cell;
+	*display:inline;
+	*zoom:1;
+}
+
+.gnav_sp li img{
+	width:65%;
+}
+
+#main_contents{
+	width:100%;
+	background:rgba(255,255,255,.9);
+	height:auto;
+	margin:0 auto;
+}
+
+.first_view_pc{
+	display:none;
+}
+
+.first_view_sp{
+	display:block;
+	width:65%;
+	margin: auto;
+}
+.first_view_sp > img{
+	width:100%;
+		    animation: fadeIn 2s ease 0s 1 normal;
+		    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+	      }
+	@keyframes fadeIn {
+	    0% {opacity: 0}
+	    100% {opacity: 1}
+	}
+
+	@-webkit-keyframes fadeIn {
+	    0% {opacity: 0}
+	    100% {opacity: 1}
+	}
+
+video#bgvid_sp {
+  position: fixed; left: 0; top: 0;
+  min-width: 100%;
+  width: auto; height: auto; z-index: -100;
+	margin: 0; padding:0;
+  background: url(video/image.png) no-repeat;
+  background-size: cover;
+}
+
+
+#contents01{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+#contents01 h1 img{
+	display:block;
+	margin:0 auto;
+    width: 100%;
+}
+
+#about_minpaku{
+	max-width:100%;
+	margin:0 auto;
+}
+.about_minpaku_title{
+    width: 65%;
+    padding: 10px;
+    margin: 0 auto;
+    }
+
+.about_minpaku_lr{
+	display:block;
+}
+
+.about_minpaku_l,
+.about_minpaku_r{
+	display:block;
+	vertical-align:middle;
+	margin:0 auto;
+}
+
+.about_minpaku_l{
+    width: 90%;
+}
+.about_minpaku_r{
+    width: 75%;
+}
+
+
+.about_minpaku_l p{
+	width:94%;
+	margin:0 auto;
+    padding: 20px;
+}
+
+.about_minpaku_r img{
+	width:100%;
+	margin:0 auto;
+}
+
+#contents02{
+	width:100%;
+	background:#FFFFFF;
+	height:auto;
+	padding:20px 0;
+}
+
+#contents02 h1,
+#contents02 h2{
+	width:95%;
+	margin:0 auto;
+}
+
+#contents02 h1 img,
+#contents02 h2 img{
+	display:none;
+}
+
+#contents02 h1 span{
+	display:block;
+	width:98%;
+	margin:5% auto;
+	color:#666666;
+	font-size:120%;
+
+}
+
+#contents02 h2 span{
+	display:block;
+	width:98%;
+	margin:10% auto 5%;
+	color:#FFFFFF;
+	background:#57B78F;
+	border-radius:20px;
+	font-size:98%;
+	text-align:center;
+}
+
+#plan01{
+	margin:0 auto;
+	padding:0;
+}
+
+#plan02{
+	margin:0 auto;
+	padding:20px;
+}
+
+.backcolor{
+	width:100%;
+	margin:auto;
+	background-color:#EEEEEE;
+}
+
+.backcolor h1{
+	margin:auto;
+}
+
+
+.backcolor2{
+	width:93%;
+	margin:auto;
+	padding:20px 0;
+}
+
+.plan01_box{
+	border: solid 2px #ffffff;
+    width: 99%;
+    margin: auto;
+}
+
+.plan01_lr,
+.plan02_lr,
+.plan03_lr{
+	display:table;
+	width:95%;
+	border-collapse:separate;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.plan03_lr{
+    padding-bottom: 5%;
+    }
+
+.plan01_1,
+.plan01_2,
+.plan01_3,
+.plan01_4,
+.plan02_1,
+.plan02_2,
+.plan02_3,
+.plan02_4,
+.plan03_1,
+.plan03_2,
+.plan03_3,
+.plan03_4{
+    padding: 5px;
+    display: -webkit-inline-box;
+    vertical-align: text-top;
+}
+
+/*旅行画像*/
+
+.plan01_2 img,
+.plan01_4 img,
+.plan02_1 img,
+.plan02_3 img,
+.plan03_2 img,
+.plan03_4 img{
+	width:100%;
+}
+
+/*矢印*/
+
+.plan01_1 img,
+.plan01_3 img,
+.plan03_1 img,
+.plan03_3 img,
+.plan02_2 img,
+.plan02_4 img{
+    display: none;
+}
+
+.plan01_1 p,
+.plan01_3 p,
+.plan02_2 p,
+.plan02_4 p,
+.plan03_1 p,
+.plan03_3 p{
+	width:100%;
+	font-size:100%;
+	display:table-cell;
+    padding:1rem;
+}
+
+.plan02_box{
+	display:table;
+	border-collapse: collapse;
+	border:solid 2px #808080;
+	width:100%;
+}
+
+
+.plan02_schedule_all{
+	display: table-row;
+	border:solid 2px #808080;
+
+}
+
+.plan02_schedule_detail{
+    width: 100%;
+}
+
+.plan02_schedule_detail_title{
+	width: 85%;
+}
+
+.plan02_schedule_detail_title img{
+	width: 100%;
+}
+
+
+.plan02_schedule_detail .text{
+	display:block;
+    width: 90%;
+	padding:5px 0;
+	font-size:100%;
+    margin: auto;
+}
+
+.plan02_schedule_detail .gazou{
+	display: table-cell;
+	width: 30%;
+	text-align:center;
+}
+
+#slide02{
+    display: none;
+}
+
+.gazou img{
+	width:80%;
+}
+
+.reservation{
+    margin: 0 auto;
+    padding:0 20px 0px 20px;
+}
+
+.reservation_box{
+    width: 100%;
+    border: none;
+}
+
+.reservation-contents{
+	display: block;
+    margin: 0;
+}
+
+.site-text{
+	display: block;
+	width: 90%;
+	font-weight: bold;
+	margin-top: 3%;
+	margin: 0 auto;
+	font-size: 85%;
+    padding-right: 0;
+}
+
+.site-gazou{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.site-gazou img{
+	width: 90%;
+}
+
+footer{
+	bottom: 0;
+	height: 5em;
+	line-height: 5em;
+	position: absolute;
+	text-align:center;
+	padding:0;
+	width:100%;
+	background-color: #808080;
+}
+
+footer small{
+	font-size:70%;
+	margin:0 auto;
+	color:#FFFFFF;
+}
+
+#anchor_link{
+  right: 0px;
+}
+
+}

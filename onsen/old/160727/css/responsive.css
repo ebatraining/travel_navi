@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* PC向け */
+@media screen and (min-width: 769px) {
+
+#contaner {
+  width: 100%;
+  }
+  header {
+    width: 90%;
+    }
+ .top_logo img {
+  max-width: 100%;
+  height: auto;
+  }
+ .main_image {
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+   }
+    }
+    
+    
+    
+    
+/* タブレット向け */    
+@media screen and (max-width: 768px) {
+img{
+max-width: 100%;
+height: auto;　
+}
+#contaner {
+  width: 100%;
+  }
+ header {
+  width: 90%;
+    }
+.top_logo img {
+  max-width: 70%;
+  }
+ nav li {
+  width: 40%;
+  margin: 5px 0;
+  }
+ #main {
+   width: 90%;
+   }
+ #main .sab_menu {
+   width: 100%;
+   }
+ #main .sab_menu li{
+     width: 30%;
+     height: auto;
+     }
+ #main .sab_menu img {
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+   }
+  article {
+    width: 100%;
+    }
+  article section {
+    width: 28%;
+    max-width: 100%;
+    height: auto;
+    }
+  article h1 {
+    font-size: 220%;
+    }
+  article section h2 {
+    font-size: 120%;
+    }
+  .kakomi {
+    max-width: 100%;
+    width: 44%;
+    height: auto;
+    }
+  .top_btn img {
+ max-width: 70%;
+ padding-left: 88%;
+ margin-right: 2%;
+}
+  
+}
+
+
+
+
+/*  スマホ向け */
+@media screen and (max-width: 640px) {
+img{
+max-width: 100%;
+height: auto;　
+}
+#contaner {
+  width: 100%;
+  }
+.top_logo img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  }
+header .sns {
+  margin-top: -100px;
+  margin-right: 15px;
+  }
+header .sns li {
+  clear: both;
+  }
+article {
+    width: 100%;
+    }
+  article section {
+    width: 27%;
+    max-width: 100%;
+    height: auto;
+    }
+  article h1 {
+    font-size: 200%;
+    }
+  article section h2 {
+    font-size: 89%;
+    }
+  .kakomi {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    }
+    .top_btn img {
+ max-width: 70%;
+ padding-left: 86%;
+ margin-right: 2%;
+}
+
+
+}
+
+/* スマホのみ */
+@media screen and (max-width: 440px) {
+  #main .sab_menu ul{
+    margin-left: 30px;
+    }
+  #main .sab_menu li {
+    width: 85%;
+    }
+    
+  article section {
+    width: 87%;
+    max-width: 100%;
+    }
+  article h1 {
+    font-size: 180%;
+    text-align: center;
+    color: #3D3D3D
+    }
+  article section {
+    text-align: center;} 
+  
+  article section h2 {
+    font-size: 150%;
+    }
+    article section p {
+      font-size: 95%;
+      }
+        .kakomi {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    }
+ .top_btn img {
+ max-width: 70%;
+ padding-left: 78%;
+ margin-right: 2%;
+}
+    
+ 
+    }
+  
