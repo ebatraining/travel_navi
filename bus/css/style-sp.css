@@ -87,12 +87,23 @@ header{
   .gnav_sp li img{
   	width:65%;
   }
-  
-  .fv{
+
+  #slider{
+  	list-style: none;
+  	margin: 0;
+  	padding: 12% 0 0;
+  	width: 100%;
+  }
+
+  #slider img{
+  	width: 100vw;
+  }
+
+/*  .fv{
 	background:url(../images/first_view_bg.jpg) no-repeat center center;
 	background-size:cover;
 	width:100%;
-}
+}*/
 
 .fv_title{
 	max-width: 950px;

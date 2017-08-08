@@ -90,8 +90,22 @@ header{
 
 /*main▼*/
 
-.fv{
-	background:url(../images/first_view_bg.jpg) no-repeat center center;
+#slider{
+	list-style: none;
+	margin: 0;
+	padding: 12% 0 0;
+	width: 100%;
+}
+
+#slider img{
+	max-height: 600px;
+	width: 100vw;
+		/*画面の拡大縮小大丈夫になるけど空白できる
+		けどたぶんちがう*/
+}
+
+/*.fv{
+	background:url(../images/back.jpg) no-repeat center center;
 	background-size:cover;
 	width:100%;
 	padding: 9rem 0 0;
@@ -106,7 +120,8 @@ header{
 
 .fv_title img{
 	width:90%;
-}
+}*/
+
 
 .topview-img{
 	width: 100%;

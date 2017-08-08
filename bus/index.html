@@ -11,7 +11,10 @@
 <link rel="stylesheet" href="css/style-sp.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js3/infiniteslide.js"></script>
+<script type="text/javascript" src="js3/jquery.pause.min.js"></script>
 <script type="text/javascript">
+
 $(function() {
     var pageTop = $('.page-top');
     pageTop.hide();
@@ -45,8 +48,19 @@ $(function(){
    });
 });
 </script>
-</head>
 
+<script type="text/javascript">
+$(window).load(function(){
+	$('#slider').infiniteslide({
+		'height': 600,// 高さ
+		'speed': 30,// スピード
+		'direction' : 'left',	//向き
+		'pauseonhover': false	//マウスオーバーでストップするか
+	});
+});
+</script>
+
+</head>
 <body>
 <div id="wrapper">
         <header>
@@ -85,12 +99,17 @@ $(function(){
             </nav>
         </header>
 
+  <div class=mainpic>
+    <div id="slider">
+    	<ul>
+    		<li><img src="images/back大.jpg"></li>
+    		<li><img src="images/back大.jpg"></li>
+    	</ul>
+    </div>
+  </div>
+
+
 	<div class="top-view">
-		<div class="fv">
-			<figure class="fv_title">
-				<img src="images/first_view.png" alt="バスツアー特集">
-			</figure>
-		</div>
 		<div class="about">
 			<div class="midashi-wrapper cf">
 				<figure class="midashi">
