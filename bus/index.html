@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="css/style-sp.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="js3/infiniteslide.js"></script>
-<script type="text/javascript" src="js3/jquery.pause.min.js"></script>
+<script type="text/javascript" src="js/infiniteslide.js"></script>
+<script type="text/javascript" src="js/jquery.pause.min.js"></script>
 <script type="text/javascript">
 
 $(function() {
@@ -60,6 +60,28 @@ $(window).load(function(){
 });
 </script>
 
+<!--ゆらゆら-->
+<!--参考：http://www.web-labo.jp/archives/2834-->
+<script type="text/javascript">
+	var angle=0,sw=1;
+	var angle2=0,sw2=1;
+  //setInterval：一定間隔で繰り返す処理
+	setInterval(function(){
+    angle = angle + sw;
+		document.getElementById("girl").style.transform = "rotate(" + angle + "deg)";
+		if(angle<-0.1 || angle>0.1){ //角度
+			sw *= -1;
+		}
+	},200);　//スピード
+  setInterval(function(){
+    angle2 = angle2 + sw2;
+    document.getElementById("akabeko").style.transform = "rotate(" + angle2 + "deg)";
+    if(angle2<-0.5 || angle2>0.5){ //角度
+      sw2 *= -1;
+    }
+  },200);　//スピード
+</script>
+
 </head>
 <body>
 <div id="wrapper">
@@ -102,12 +124,25 @@ $(window).load(function(){
   <div class=mainpic>
     <div id="slider">
     	<ul>
-    		<li><img src="images/back大.jpg"></li>
-    		<li><img src="images/back大.jpg"></li>
+    		<li><img src="images/back.jpg"></li>
+    		<li><img src="images/back.jpg"></li>
     	</ul>
     </div>
   </div>
 
+
+  <div class="yurayura">
+    <div id="girl"><img src="images/girl.png"></div>
+    <div id="akabeko"><img src="images/akabeko.png"></div>
+    <div id="beel"><img src="images/beel.png"></div>
+    <div id="himono"><img src="images/himono.png"></div>
+    <div id="ichigo"><img src="images/ichigo.png"></div>
+    <div id="mikan"><img src="images/mikan.png"></div>
+    <div id="ramen"><img src="images/ramen.png"></div>
+    <div id="sake"><img src="images/sake.png"></div>
+    <div id="sushi"><img src="images/sushi.png"></div>
+    <div id="tai"><img src="images/tai.png"></div>
+  </div>
 
 	<div class="top-view">
 		<div class="about">
