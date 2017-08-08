@@ -57,29 +57,34 @@ $(window).load(function(){
 		'direction' : 'left',	//向き
 		'pauseonhover': false	//マウスオーバーでストップするか
 	});
-});
-</script>
 
-<!--ゆらゆら-->
-<!--参考：http://www.web-labo.jp/archives/2834-->
-<script type="text/javascript">
-	var angle=0,sw=1;
-	var angle2=0,sw2=1;
-  //setInterval：一定間隔で繰り返す処理
-	setInterval(function(){
-    angle = angle + sw;
-		document.getElementById("girl").style.transform = "rotate(" + angle + "deg)";
-		if(angle<-0.1 || angle>0.1){ //角度
-			sw *= -1;
-		}
-	},200);　//スピード
-  setInterval(function(){
-    angle2 = angle2 + sw2;
-    document.getElementById("akabeko").style.transform = "rotate(" + angle2 + "deg)";
-    if(angle2<-0.5 || angle2>0.5){ //角度
-      sw2 *= -1;
-    }
-  },200);　//スピード
+
+//ゆらゆら-->
+//参考：http://www.web-labo.jp/archives/2834-->
+  $('#rotate').children().each(function(attr){
+    var self = $(this);
+    self.attr("data-angle",0);
+    self.attr("data-sw",1);
+
+
+
+
+//setInterval：一定間隔で繰り返す処理
+    setInterval(function(){
+      var currentAngle = Number(self.attr("data-angle"));
+      var currentSw    = Number(self.attr("data-sw"));
+      var angle = currentAngle + currentSw ;
+      self.css( { transform: 'rotate(' + angle + 'deg)' } );
+  		if(angle<-0.1 || angle>0.1){ //角度
+  			self.attr("data-sw", currentSw * -1 );
+  		}
+      self.attr("data-angle",angle);
+  	},300);　//スピード
+  })
+});
+
+
+
 </script>
 
 </head>
@@ -131,7 +136,7 @@ $(window).load(function(){
   </div>
 
 
-  <div class="yurayura">
+  <div id="rotate" class="yurayura">
     <div id="girl"><img src="images/girl.png"></div>
     <div id="akabeko"><img src="images/akabeko.png"></div>
     <div id="beel"><img src="images/beel.png"></div>
