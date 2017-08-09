@@ -14,6 +14,7 @@
 
 header{
 	width: 100%;
+  top: 0;
 	background:#FFF;
 	position:fixed;
 	z-index:1001;
@@ -90,74 +91,137 @@ header{
 
 /*main▼*/
 
+#mainpic{
+	position: relative;
+	margin-top:13%;
+	width: 100%;
+	height: 100%;
+
+}
+
 #slider{
+	position:static;
 	list-style: none;
 	margin: 0;
-	padding: 12% 0 0;
-	width: 100%;
 }
 
 #slider img{
-	max-height: 600px;
+	max-height: 500px;
+	height: 100vh;
 	width: 100vw;
-		/*画面の拡大縮小大丈夫になるけど空白できる
-		けどたぶんちがう*/
 }
 
-#title {
-  position:absolute;
-  top:30%;
+#title{
+	width: 30%;
+	position:absolute;
+	top:8%;
+	left:20%;
+}
+
+#title img{
+	width: 95%;
 }
 
 #girl {
-  position:absolute;
-  top:70%;
-}
-#tai {
-  position:absolute;
-  top:90%;
+	width: 20%;
+	position:absolute;
+	top:38%;
 	left:20%;
 }
-#sushi {
+
+#girl img{
+	width: 90%;
+}
+
+#tai {
+	width: 15%;
   position:absolute;
-  top:80%;
-	left:35%;
+  top:50%;
+	left:37%;
+}
+#tai img{
+	width: 70%;
+}
+
+#sushi {
+	width: 15%;
+  position:absolute;
+  top:41%;
+	left:46%;
+}
+#sushi img{
+	width: 60%;
 }
 #mikan {
+	width: 15%;
   position:absolute;
-  top:115%;
-	left:35%;
+  top:72%;
+	left:45%;
 }
+#mikan img{
+	width: 60%;
+}
+
 #himono {
+	width: 15%;
   position:absolute;
-  top:45%;
-	left:55%;
+  top:10%;
+	left:56%;
+}
+#himono img{
+	width: 50%;
 }
 #sake {
+	width: 15%;
   position:absolute;
-  top:80%;
-	left:50%;
+  top:33%;
+	left:57%;
+}
+#sake img{
+	width: 55%;
 }
 #ichigo {
+	width: 15%;
   position:absolute;
-  top:110%;
-	left:50%;
+  top:57%;
+	left:54%;
 }
+
+#ichigo img{
+	width: 35%;
+}
+
 #ramen {
+	width: 15%;
   position:absolute;
-  top:62%;
-	left:68%;
+  top:18%;
+	left:66%;
 }
+
+#ramen img{
+	width: 55%;
+}
+
 #akabeko {
+	width: 15%;
   position:absolute;
-  top:87%;
+  top:43%;
 	left:67%;
 }
+#akabeko img{
+	width: 60%;
+}
+
 #beel {
+	width: 15%;
   position:absolute;
-  top:108%;
+  top:60%;
 	left:62%;
 }
+#beel img{
+	width: 30%;
+}
+
 
 
 

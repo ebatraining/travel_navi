@@ -52,7 +52,7 @@ $(function(){
 <script type="text/javascript">
 $(window).load(function(){
 	$('#slider').infiniteslide({
-		'height': 600,// 高さ
+		'height': 500,// 高さ
 		'speed': 30,// スピード
 		'direction' : 'left',	//向き
 		'pauseonhover': false	//マウスオーバーでストップするか
@@ -71,79 +71,78 @@ $(window).load(function(){
       var currentSw    = Number(self.attr("data-sw"));
       var angle = currentAngle + currentSw ;
       self.css( { transform: 'rotate(' + angle + 'deg)' } );
-  		if(angle<-0.1 || angle>0.1){ //角度
+  		if(angle<-2 || angle>2){ //角度
   			self.attr("data-sw", currentSw * -1 );
   		}
       self.attr("data-angle",angle);
-  	},300);　//スピード
+  	},100);　//スピード
   })
 });
-
-
 
 </script>
 
 </head>
 <body>
 <div id="wrapper">
-        <header>
-        	<div class="header_top">
-                <h1 class="logo">
-                    <img src="images/logo.jpg" alt="癒し旅ナビ">
-                </h1>
-                <div class="sns">
-                    <img src="images/fb.png" alt="facebook">
-                    <a href="https://twitter.com/intent/tweet?button_hashtag=%E7%99%92%E3%81%97%E6%97%85%E3%83%8A%E3%83%93" class="twitter-hashtag-button">
-                      <img src="images/twitter.png" alt="twitter">
-                    </a>
-                </div>
-            </div>
+  <header>
+  	<div class="header_top">
+          <h1 class="logo">
+              <img src="images/logo.jpg" alt="癒し旅ナビ">
+          </h1>
+          <div class="sns">
+              <img src="images/fb.png" alt="facebook">
+              <a href="https://twitter.com/intent/tweet?button_hashtag=%E7%99%92%E3%81%97%E6%97%85%E3%83%8A%E3%83%93" class="twitter-hashtag-button">
+                <img src="images/twitter.png" alt="twitter">
+              </a>
+          </div>
+      </div>
 
 <!-- PC用グローバルナビ -->
-            <nav class="gnav">
-                <ul>
-                    <li><a href="../minpaku"><img src="images/menu1.png" alt="民泊プラン"></a></li>
-                    <li><a href="./index.html"><img src="images/menu2.png" alt="バスツアー"></a></li>
-                    <li><a href="../onsen"><img src="images/menu3.png" alt="温泉旅行"></a></li>
-                    <li><a href="../w_trip"><img src="images/menu4.png" alt="海外旅行"></a></li>
-                </ul>
-            </nav>
+      <nav class="gnav">
+          <ul>
+              <li><a href="../minpaku"><img src="images/menu1.png" alt="民泊プラン"></a></li>
+              <li><a href="./index.html"><img src="images/menu2.png" alt="バスツアー"></a></li>
+              <li><a href="../onsen"><img src="images/menu3.png" alt="温泉旅行"></a></li>
+              <li><a href="../w_trip"><img src="images/menu4.png" alt="海外旅行"></a></li>
+          </ul>
+      </nav>
 
-            <!-- スマホ用グローバルナビ -->
-            <nav class="gnav_sp">
-                <ul>
-                    <li><a href="..minpaku"><img src="images/menu1.png" alt="民泊プラン"></a></li>
-                    <li><a href="./index.html"><img src="images/menu2.png" alt="バスツアー"></a></li>
-                </ul>
-                <ul>
-                    <li><a href="../onsen"><img src="images/menu3.png" alt="温泉旅行"></a></li>
-                    <li><a href="../w_trip"><img src="images/menu4.png" alt="海外旅行"></a></li>
-                </ul>
-            </nav>
-        </header>
+      <!-- スマホ用グローバルナビ -->
+      <nav class="gnav_sp">
+          <ul>
+              <li><a href="..minpaku"><img src="images/menu1.png" alt="民泊プラン"></a></li>
+              <li><a href="./index.html"><img src="images/menu2.png" alt="バスツアー"></a></li>
+          </ul>
+          <ul>
+              <li><a href="../onsen"><img src="images/menu3.png" alt="温泉旅行"></a></li>
+              <li><a href="../w_trip"><img src="images/menu4.png" alt="海外旅行"></a></li>
+          </ul>
+      </nav>
+  </header>
 
-  <div class=mainpic>
+  <div id="mainpic">
+<!--背景スライダー-->
     <div id="slider">
     	<ul>
     		<li><img src="images/back.jpg"></li>
     		<li><img src="images/back.jpg"></li>
     	</ul>
     </div>
-  </div>
 
-
-  <div id="title"><img src="images/title.png"></div>
-  <div id="rotate">
-    <div id="girl" data-angle="0", data-sw="1"><img src="images/girl.png"></div>
-    <div id="tai" data-angle="1", data-sw="1"><img src="images/tai.png"></div>
-    <div id="sushi" data-angle="0", data-sw="1"><img src="images/sushi.png"></div>
-    <div id="mikan" data-angle="1", data-sw="1"><img src="images/mikan.png"></div>
-    <div id="himono" data-angle="0", data-sw="1"><img src="images/himono.png"></div>
-    <div id="sake" data-angle="1", data-sw="1"><img src="images/sake.png"></div>
-    <div id="ichigo" data-angle="0", data-sw="1"><img src="images/ichigo.png"></div>
-    <div id="ramen" data-angle="1", data-sw="1" ><img src="images/ramen.png"></div>
-    <div id="akabeko" data-angle="1", data-sw="1"><img src="images/akabeko.png"></div>
-    <div id="beel" data-angle="0", data-sw="1"><img src="images/beel.png"></div>
+<!--ゆらゆら-->
+    <div id="rotate">
+      <div id="title"><img src="images/title.png"></div>
+      <div id="girl" data-angle="0", data-sw="1"><img src="images/girl.png"></div>
+      <div id="tai" data-angle="0", data-sw="-1"><img src="images/tai.png"></div>
+      <div id="sushi" data-angle="1", data-sw="-1"><img src="images/sushi.png"></div>
+      <div id="mikan" data-angle="2", data-sw="1"><img src="images/mikan.png"></div>
+      <div id="himono" data-angle="0", data-sw="-1"><img src="images/himono.png"></div>
+      <div id="sake" data-angle="2", data-sw="1"><img src="images/sake.png"></div>
+      <div id="ichigo" data-angle="0", data-sw="-1"><img src="images/ichigo.png"></div>
+      <div id="ramen" data-angle="1", data-sw="1" ><img src="images/ramen.png"></div>
+      <div id="akabeko" data-angle="0", data-sw="-1"><img src="images/akabeko.png"></div>
+      <div id="beel" data-angle="1", data-sw="1"><img src="images/beel.png"></div>
+    </div>
   </div>
 
 	<div class="top-view">
