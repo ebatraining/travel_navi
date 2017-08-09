@@ -59,27 +59,6 @@ $(window).load(function(){
 	});
 
 
-//ゆらゆら-->
-//参考：http://www.web-labo.jp/archives/2834-->
-  $('#rotate').children().each(function(attr){
-    var self = $(this);
-//    self.attr("data-angle",0);
-//    self.attr("data-sw",1);
-//setInterval：一定間隔で繰り返す処理
-    setInterval(function(){
-      var currentAngle = Number(self.attr("data-angle"));
-      var currentSw    = Number(self.attr("data-sw"));
-      var angle = currentAngle + currentSw ;
-      self.css( { transform: 'rotate(' + angle + 'deg)' } );
-  		if(angle<-0.1 || angle>0.1){ //角度
-  			self.attr("data-sw", currentSw * -1 );
-  		}
-      self.attr("data-angle",angle);
-  	},300);　//スピード
-  })
-});
-
-
 
 </script>
 
@@ -132,18 +111,17 @@ $(window).load(function(){
   </div>
 
 
-  <div id="title"><img src="images/title.png"></div>
-  <div id="rotate">
+  <div id="rotate" class="yurayura">
     <div id="girl" data-angle="0", data-sw="1"><img src="images/girl.png"></div>
-    <div id="tai" data-angle="1", data-sw="1"><img src="images/tai.png"></div>
-    <div id="sushi" data-angle="0", data-sw="1"><img src="images/sushi.png"></div>
-    <div id="mikan" data-angle="1", data-sw="1"><img src="images/mikan.png"></div>
-    <div id="himono" data-angle="0", data-sw="1"><img src="images/himono.png"></div>
-    <div id="sake" data-angle="1", data-sw="1"><img src="images/sake.png"></div>
-    <div id="ichigo" data-angle="0", data-sw="1"><img src="images/ichigo.png"></div>
-    <div id="ramen" data-angle="1", data-sw="1" ><img src="images/ramen.png"></div>
     <div id="akabeko" data-angle="1", data-sw="1"><img src="images/akabeko.png"></div>
-    <div id="beel" data-angle="0", data-sw="1"><img src="images/beel.png"></div>
+    <div id="beel"><img src="images/beel.png"></div>
+    <div id="himono"><img src="images/himono.png"></div>
+    <div id="ichigo"><img src="images/ichigo.png"></div>
+    <div id="mikan"><img src="images/mikan.png"></div>
+    <div id="ramen"><img src="images/ramen.png"></div>
+    <div id="sake"><img src="images/sake.png"></div>
+    <div id="sushi"><img src="images/sushi.png"></div>
+    <div id="tai"><img src="images/tai.png"></div>
   </div>
 
 	<div class="top-view">

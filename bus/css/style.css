@@ -104,13 +104,61 @@ header{
 		けどたぶんちがう*/
 }
 
-#rotate{
-	margin: 0 20%;
+#title {
+  position:absolute;
+  top:30%;
 }
 
-#akabeko{
-	margin: 0 20%;
+#girl {
+  position:absolute;
+  top:70%;
 }
+#tai {
+  position:absolute;
+  top:90%;
+	left:20%;
+}
+#sushi {
+  position:absolute;
+  top:80%;
+	left:35%;
+}
+#mikan {
+  position:absolute;
+  top:115%;
+	left:35%;
+}
+#himono {
+  position:absolute;
+  top:45%;
+	left:55%;
+}
+#sake {
+  position:absolute;
+  top:80%;
+	left:50%;
+}
+#ichigo {
+  position:absolute;
+  top:110%;
+	left:50%;
+}
+#ramen {
+  position:absolute;
+  top:62%;
+	left:68%;
+}
+#akabeko {
+  position:absolute;
+  top:87%;
+	left:67%;
+}
+#beel {
+  position:absolute;
+  top:108%;
+	left:62%;
+}
+
 
 
 /*.fv{
