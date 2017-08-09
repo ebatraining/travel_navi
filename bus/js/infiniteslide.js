@@ -17,7 +17,7 @@ $.fn.infiniteslide = function(options) {
 
 //option
 var settings = $.extend( {
-		'height': 400, //高さ
+//		'height': 80, //高さ
 		'speed': 30, //速さ
 		'direction' : 'left', //向き
 		'pauseonhover': true //マウスオーバーでストップ
@@ -43,8 +43,8 @@ var opening = function(obj){
 		overflow: 'hidden'
 	});
 	ul.css({
-		width: i*2 + 'px',
-		height: settings.height + 'px',
+		width: i*2 + '%',
+//		height: settings.height + 'vh',
 		position: 'relative',
 		overflow: 'hidden'
 	}).children('li').css({
