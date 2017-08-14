@@ -109,8 +109,8 @@ header{
   #title{
   	width: 40%;
   	position:absolute;
-  	top:8%;
-  	left:20%;
+  	top:7%;
+  	left:16%;
   }
 
   #title img{
@@ -121,7 +121,7 @@ header{
   	width: 30%;
   	position:absolute;
   	top:35%;
-  	left:10%;
+  	left:8%;
   }
 
   #girl img{
@@ -132,7 +132,7 @@ header{
   	width: 20%;
     position:absolute;
     top:48%;
-  	left:38%;
+  	left:36%;
   }
   #tai img{
   	width: 70%;
@@ -142,7 +142,7 @@ header{
   	width: 20%;
     position:absolute;
     top:35%;
-  	left:46%;
+  	left:44%;
   }
   #sushi img{
   	width: 60%;
@@ -151,7 +151,7 @@ header{
   	width: 20%;
     position:absolute;
     top:65%;
-  	left:47%;
+  	left:45%;
   }
   #mikan img{
   	width: 60%;
@@ -161,7 +161,7 @@ header{
   	width: 20%;
     position:absolute;
     top:14%;
-  	left:66%;
+  	left:64%;
   }
   #himono img{
   	width: 50%;
@@ -170,7 +170,7 @@ header{
   	width: 20%;
     position:absolute;
     top:35%;
-  	left:65%;
+  	left:63%;
   }
   #sake img{
   	width: 55%;
@@ -179,7 +179,7 @@ header{
   	width: 20%;
     position:absolute;
     top:55%;
-  	left:60%;
+  	left:58%;
   }
 
   #ichigo img{
@@ -190,7 +190,7 @@ header{
   	width: 20%;
     position:absolute;
     top:20%;
-  	left:83%;
+  	left:81%;
   }
 
   #ramen img{
@@ -201,7 +201,7 @@ header{
   	width: 20%;
     position:absolute;
     top:41%;
-  	left:80%;
+  	left:78%;
   }
   #akabeko img{
   	width: 60%;
@@ -211,7 +211,7 @@ header{
   	width: 20%;
     position:absolute;
     top:60%;
-  	left:75%;
+  	left:73%;
   }
   #beel img{
   	width: 30%;
