@@ -1,0 +1,503 @@
+@media screen and (max-width:767px) {
+
+  * {
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  	margin: 0;
+  	color: #70787a;
+  }
+
+  .cf{
+  	overflow: hidden;
+  }
+
+
+header{
+  	width:100%;
+  	background:#FFF;
+  	position:static;
+  	margin:0 auto;
+  	box-shadow: 0 0 5px #555;
+  	-moz-box-shadow: 0 0 5px #555;
+  	-o-box-shadow: 0 0 5px #555;
+  	-ms-box-shadow: 0 0 5px #555;
+  	filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=0, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=270, strength=3, enabled=true);
+}
+
+
+  .header_top{
+  	display:table;
+  }
+
+  .header_top h1{
+  	margin:0;
+  	padding:0;
+  	display:table-cell;
+  	width:30%;
+  	vertical-align:top;
+  	*display:inline;
+  	*zoom:1;
+  }
+
+  .header_top h1 img{
+  	width:90%
+  }
+
+  .sns{
+  	text-align:right;
+  	display:table-cell;
+  	width:80%;
+  	vertical-align:top;
+  	*display:inline;
+  	*zoom:1;
+  }
+
+  .sns img{
+  	display:inline-block;
+  	width:12%;
+  	margin:10px 10px 0 0;
+  	*display:inline;
+  	*zoom:1;
+  }
+
+  .gnav{
+  	display:none;
+  }
+
+  .gnav_sp{
+  	display:block;
+  	width:100%;
+  }
+
+  .gnav_sp ul{
+  	list-style:none;
+  	display:table;
+  	border-collapse:separate;
+  	table-layout:fixed;
+  	margin:0 auto;
+  	padding-left:15%;
+  	width:80%;
+  }
+
+  .gnav_sp li{
+  	display:table-cell;
+  	*display:inline;
+  	*zoom:1;
+  }
+
+  .gnav_sp li img{
+  	width:65%;
+  }
+
+
+  #mainpic{
+  	position: relative;
+  	width: 100%;
+  	height: 100%;
+
+  }
+
+  #slides{
+  	
+  	list-style: none;
+  	margin: 0;
+  }
+
+  #slides img{
+ 
+  }
+
+  #title{
+  	width: 40%;
+  	position:absolute;
+  	top:7%;
+  	left:16%;
+  }
+
+  #title img{
+  	width: 100%;
+  }
+
+
+
+/*  .fv{
+	background:url(../images/first_view_bg.jpg) no-repeat center center;
+	background-size:cover;
+	width:100%;
+}*/
+
+.fv_title{
+	max-width: 950px;
+    margin: 0 auto;
+    padding:1rem 0;
+}
+
+.fv_title img{
+	width:100%;
+}
+
+.topview-img{
+	width: 100%;
+	margin-top: 150px;
+}
+
+.about{
+	background:url(../images/blue_bg.jpg) no-repeat center center;
+	background-size:cover;
+	width:96%;
+	padding:4% 2%;
+}
+
+.midashi-wrapper{
+	max-width:950px;
+	margin: 0 auto;
+	padding:0 1%;
+}
+
+.towa{
+	width:100%;
+}
+
+
+.towa img{
+	width: 100%;
+	margin-top:5%;
+}
+
+.towa-a{
+	margin: 0 10%;
+}
+
+.buspic{
+	width: 90%;
+}
+
+.buspic img{
+	width: 100%;
+}
+
+
+
+  .purpose{
+  	width: 80%;
+  	margin: 0 auto;
+  	margin-top: 15%;
+  }
+
+.porpose p{
+  margin: 5%;
+}
+  .purpose h1{
+
+  	margin-bottom: 3%;
+  }
+
+  .purpose1 img{
+  	width: 100%;
+    margin-top: 5%;
+  }
+
+  .purpose1{
+  	width: 100%;
+    margin: 4% 0 4% 0;
+  }
+
+  .purpose2 img{
+  	width: 100%;
+margin-top: 5%;
+  }
+
+  .purpose2{
+  	width: 100%;
+    margin: 4% 0 4% 0;
+  }
+
+  .purpose3 img{
+  	width: 100%;
+    margin-top: 5%;
+  }
+
+  .purpose3{
+  	width: 100%;
+    margin: 4% 0 4% 0;
+  }
+
+  .purpose4 img{
+  	width: 100%;
+    margin-top: 5%;
+  }
+
+  .purpose4{
+  	width: 100%;
+    margin: 4% 0 4% 0;
+  }
+
+  .description{
+
+  }
+
+  .description h2{
+    font-family: serif;
+  }
+
+  .description span{
+    font-family: serif;
+    font-size: 150%;
+  }
+
+  .ka{
+  	color: #ef4161;
+  }
+
+  .go{
+  	color: #6ddc5f;
+  }
+
+  .hi{
+  	color: #29dcda;
+  }
+
+  .ko{
+  	color: #c97dfa;
+  }
+
+.plan_image_01{
+	display:none;
+}
+.plan_image_01_sp{
+	display:block;
+	width:100%;
+	margin-top:6rem;
+}
+
+.plan_name_01_sp img{
+	width:100%;
+}
+
+.plan_image_02{
+	display:none;
+}
+.plan_image_02_sp{
+	display:block;
+	width:100%;
+	margin-top:6rem;
+}
+
+.plan_name_02_sp img{
+	width:100%;
+}
+
+.plan_image_03{
+	display:none;
+}
+.plan_image_03_sp{
+	display:block;
+	width:100%;
+	margin-top:6rem;
+}
+
+.plan_name_03_sp img{
+	width:100%;
+}
+
+.plan_image_04{
+	display:none;
+}
+.plan_image_04_sp{
+	display:block;
+	width:100%;
+	margin-top:6rem;
+}
+
+.plan_name_04_sp img{
+	width:100%;
+}
+
+  #kajitugari{
+  	margin-top: 20%;
+  }
+
+  .top-pic{
+  	width: 100%;
+  }
+
+  .place1,
+  .place2{
+  	width: 80%;
+  	margin: 0 auto;
+  	margin-top: 10%;
+  }
+
+  .span1{
+  	color: white;
+  	background-color: #27e9be;
+    padding: 1% 6%;
+  }
+
+  .span2{
+  	color: white;
+  	background-color: #f64296;
+    padding: 1% 6%;
+  }
+
+  .span3{
+  	color: white;
+  	background-color: #c171e6;
+    padding: 1% 6%;
+  }
+
+  .span4{
+  	color: white;
+  	background-color: #23bcf4;
+    padding: 1% 6%;
+  }
+
+  .span5{
+  	color: white;
+  	background-color: #57ce28;
+    padding: 1% 6%;
+  }
+
+  .span6{
+  	color: white;
+  	background-color: #f1a346;
+    padding: 1% 6%;
+  }
+
+  .span7{
+  	color: white;
+  	background-color: #f14991;
+    padding: 1% 6%;
+  }
+
+  .span8{
+  	color: white;
+  	background-color: #23bcf4;
+    padding: 1% 6%;
+  }
+
+  .place1 h2{
+  	margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .place2 h2{
+  	margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .plan1{
+  	width: 100%;
+    margin-top: 5%;
+  }
+
+  .plans img{
+  	width: 100%;
+  }
+
+  .plans p{
+  	width: 90%;
+    margin: 0 auto;
+  }
+
+  .plan2{
+  	width: 100%;
+    margin-top: 5%;
+  }
+
+  #onsen,
+  #gourmet,
+  #koujyou,
+  .site{
+  	margin-top: 10%;
+  }
+
+  .site{
+  	width: 80%;
+    margin: 20% auto;
+  }
+
+  .site h1{
+  	margin-bottom: 3%;
+  }
+
+  .site1,
+  .site2{
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .site img{
+  	width: 100%;
+    margin: 2% 0;
+  }
+
+  .site h2{
+  	color: #5873b0;
+  }
+
+  .sq{
+  	color: #3fc2a8;
+  }
+
+  .page-top{
+  	text-align: right;
+  	position: fixed;
+  	bottom: 25%;
+  	right:2%;
+  	z-index: 1;
+  }
+
+  /*footer▼*/
+footer{
+  background:url(../images/footer_bg.jpg) center center no-repeat;
+	background-size:cover;
+	text-align: center;
+	padding: 3% 0;
+	margin-top: 10%;
+}
+
+.link{
+	max-width:950px;
+	margin:3% auto 5%;
+}
+
+.link ul{
+	list-style:none;
+	overflow: hidden;
+}
+
+.link li{
+	float:left;
+	width:37%;
+}
+
+.link a{
+   text-decoration: none;
+   color:#FFFFFF;
+   font-size:85%;
+}
+
+.link a:hover{
+   color:#E1601D;
+}
+
+.link i{
+   color:#FFFFFF;
+}
+
+footer img{
+  width: 45%;
+  margin-bottom: 3%
+}
+
+small{
+	margin-right: 2%;
+	color: white;
+}
+
+
+.copyright{
+	margin: 0;
+}
+
+}/* PC&タブレット端末向けCSS */
