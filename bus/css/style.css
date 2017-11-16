@@ -42,7 +42,8 @@ header{
 }
 
 .header_top h1 img{
-	width:90%
+	width:90%;
+	border:0;
 }
 
 .sns{
@@ -631,6 +632,7 @@ footer{
 .link ul{
 	list-style:none;
 	overflow: hidden;
+	padding:0;
 }
 
 .link li{
@@ -641,7 +643,7 @@ footer{
 .link a{
    text-decoration: none;
    color:#FFFFFF;
-   font-size:85%;
+   font-size:82%;
 }
 
 .link a:hover{
