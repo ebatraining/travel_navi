@@ -17,6 +17,38 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/scroll_top.js"></script>
 
+<!--マップ クリック範囲のずれ対策-->
+<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+<script>$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+})
+</script>
+
+<!--マップ スクロール用スクリプト-->
+<script type="text/javascript">
+function changeMapImage(imgPath) {
+document.getElementById('map').src = imgPath;
+}
+</script>
+<script>
+$(function(){
+    // ヘッダーの高さ px
+    var headerHight = 200;
+   // areaタグの #で始まるアンカーをクリックした場合に処理
+   $('area[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // スムーススクロール//ターゲットの座標からヘッダの高さ分引く
+      var position = target.offset().top-headerHight;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
 
 
 
