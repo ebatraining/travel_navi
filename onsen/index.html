@@ -15,16 +15,13 @@
 <link rel="stylesheet" type="text/css" href="../onsen/css/responsive.css">-->
 <link rel="stylesheet" href="css/sp.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/scroll_top.js"></script>
-
-<!--マップ クリック範囲のずれ対策-->
 <script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+<script src="js/scroll_top.js"></script>
 <script>$(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
 })
 </script>
 
-<!--マップ スクロール用スクリプト-->
 <script type="text/javascript">
 function changeMapImage(imgPath) {
 document.getElementById('map').src = imgPath;
@@ -33,11 +30,11 @@ document.getElementById('map').src = imgPath;
 <script>
 $(function(){
     // ヘッダーの高さ px
-    var headerHight = 200;
+    var headerHight = 175;
    // areaタグの #で始まるアンカーをクリックした場合に処理
-   $('area[href^=#]').click(function() {
+   $('a,area[href^=#]').click(function() {
       // スクロールの速度
-      var speed = 400; // ミリ秒
+      var speed = 300; // ミリ秒
       // アンカーの値取得
       var href= $(this).attr("href");
       // 移動先を取得
@@ -49,7 +46,6 @@ $(function(){
    });
 });
 </script>
-
 
 
 
@@ -200,27 +196,358 @@ $(document).ready(function(){
 </div>
 
 <!--追加ここから-->
-<!--マップここから-->
-<div class="map-list">
-  <div class="map1">
-    <p></p>
-    <img id="map" src="image/map.jpg" alt="地図" usemap="#map">
-    <map name="map">
-      <area onmouseover="changeMapImage('image/map-hkd.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="762,12,716,143,716,191,773,191,773,170,944,170,944,102,806,12" href="#hokkaido">
-      <area onmouseover="changeMapImage('image/map-th.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="761,206,723,219,722,353,764,353,765,432,852,432,852,193,828,192,828,216,761,215" href="#tohoku">
-      <area onmouseover="changeMapImage('image/map-kt.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="715,436,715,507,753,507,753,570,803,570,804,541,822,541,822,570,852,570,852,436" href="#kanto">
-      <area onmouseover="changeMapImage('image/map-ks.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="717,357,717,398,657,398,657,548,749,548,749,512,711,512,711,436,760,432,760,356" href="#koshinetsu">
-      <area onmouseover="changeMapImage('image/map-iz.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="659,553,659,599,693,599,712,585,723,585,723,598,748,598,748,553" href="#izu">
-      <area onmouseover="changeMapImage('image/map-hk.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="549,365,549,403,516,450,496,452,496,496,593,496,593,447,653,447,653,403,586,403,586,365" href="#hokuriku">
-      <area onmouseover="changeMapImage('image/map-ty.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="598,452,597,500,575,500,575,594,653,594,653,452" href="#tyubu">
-      <area onmouseover="changeMapImage('image/map-kk.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="386,452,386,541,435,541,435,655,571,656,571,500,493,501,493,451" href="#kinki">
-      <area onmouseover="changeMapImage('image/map-tg.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="276,452,236,478,236,537,383,537,383,452" href="#tyugoku">
-      <area onmouseover="changeMapImage('image/map-sk.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="246,554,246,644,403,644,403,555,344,555,344,564,293,564,293,554" href="#shikoku">
-      <area onmouseover="changeMapImage('image/map-ky.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="71,481,71,564,107,564,107,549,148,549,150,697,228,696,228,530,186,480" href="#kyusyu">
-    </map>
+<!--sp用ボタン-->
+<div class="sp">
+  <h2 class="sp-h">全国の温泉地を探す</h2>
+  <p>各地域の温泉観光協会を探せます。</p>
+  <div class="sp-b">
+    <a href="#hokkaido"><img src="image/bt-hkd.png" alt="北海道"></a>
+    <a href="#tohoku"><img src="image/bt-th.png" alt="東北"></a>
   </div>
-<!--リストここから-->
+  <div id="back" class="sp-b">
+    <a href="#kanto"><img src="image/bt-kt.png" alt="関東"></a>
+    <a href="#izu"><img src="image/bt-iz.png" alt="伊豆"></a>
+  </div>
+  <div class="sp-b">
+    <a href="#koshinetsu"><img src="image/bt-ks.png" alt="甲信越"></a>
+    <a href="#hokuriku"><img src="image/bt-hk.png" alt="北陸"></a>
+  </div>
+  <div class="sp-b">
+    <a href="#tyubu"><img src="image/bt-ty.png" alt="中部"></a>
+    <a href="#kinki"><img src="image/bt-kk.png" alt="近畿"></a>
+  </div>
+  <div class="sp-b">
+    <a href="#tyugoku"><img src="image/bt-tg.png" alt="中国"></a>
+    <a href="#kyusyu"><img src="image/bt-ky.png" alt="九州"></a>
+  </div>
+  <div class="sp-b">
+    <a href="#shikoku"><img src="image/bt-sk.png" alt="四国"></a>
+    <a href="#back"><img src="image/back-empty.png" alt="ボタン"></a>
+  </div>
 </div>
+
+<!--マップ-->
+<div class="map1">
+  <img id="map" src="image/map.jpg" alt="地図" usemap="#map">
+  <map name="map">
+    <area onmouseover="changeMapImage('image/map-hkd.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="762,12,716,143,716,191,773,191,773,170,944,170,944,102,806,12" href="#hokkaido">
+    <area onmouseover="changeMapImage('image/map-th.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="761,206,723,219,722,353,764,353,765,432,852,432,852,193,828,192,828,216,761,215" href="#tohoku">
+    <area onmouseover="changeMapImage('image/map-kt.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="715,436,715,507,753,507,753,570,803,570,804,541,822,541,822,570,852,570,852,436" href="#kanto">
+    <area onmouseover="changeMapImage('image/map-ks.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="717,357,717,398,657,398,657,548,749,548,749,512,711,512,711,436,760,432,760,356" href="#koshinetsu">
+    <area onmouseover="changeMapImage('image/map-iz.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="659,553,659,599,693,599,712,585,723,585,723,598,748,598,748,553" href="#izu">
+    <area onmouseover="changeMapImage('image/map-hk.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="549,365,549,403,516,450,496,452,496,496,593,496,593,447,653,447,653,403,586,403,586,365" href="#hokuriku">
+    <area onmouseover="changeMapImage('image/map-ty.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="598,452,597,500,575,500,575,594,653,594,653,452" href="#tyubu">
+    <area onmouseover="changeMapImage('image/map-kk.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="386,452,386,541,435,541,435,655,571,656,571,500,493,501,493,451" href="#kinki">
+    <area onmouseover="changeMapImage('image/map-tg.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="276,452,236,478,236,537,383,537,383,452" href="#tyugoku">
+    <area onmouseover="changeMapImage('image/map-sk.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="246,554,246,644,403,644,403,555,344,555,344,564,293,564,293,554" href="#shikoku">
+    <area onmouseover="changeMapImage('image/map-ky.jpg')" onmouseout="changeMapImage('image/map.jpg')" shape="poly" coords="71,481,71,564,107,564,107,549,148,549,150,697,228,696,228,530,186,480" href="#kyusyu">
+  </map>
+</div>
+
+<!--リスト-->
+<div class="list">
+  <div class="table">
+	   <div id="li-hkd" class="left">
+	     <img src="image/back_hkd.png" alt="背景">
+       <h2 id="hokkaido">北海道</h2>
+       <table class="t-left">
+         <tr> <th>北海道</th> <td><a href="http://ja.kushiro-lakeakan.com/" target="_blank">釧路・阿寒湖観光公式サイト</td></tr>
+         <tr> <th></th> <td><a href="http://www.onneyuonsen.jp/index.html" target="_blank">温根湯観光協会</td></tr>
+         <tr> <th></th> <td><a href="http://www.shikotsuko.com/" target="_blank">支笏湖温泉旅館組合</td></tr>
+         <tr> <th></th> <td><a href="http://www.otaru-asari.co.jp/" target="_blank">朝里川温泉ゆらぎの里</td></tr>
+         <tr> <th></th> <td><a href="http://www.sounkyo.net/" target="_blank">層雲峡観光協会</td></tr>
+         <tr> <th></th> <td><a href="http://www.tokachigawa.net/" target="_blank">十勝川温泉観光協会</td></tr>
+         <tr> <th></th> <td><a href="http://www.laketoya.com/" target="_blank">洞爺湖温泉観光協会</td></tr>
+         <tr> <th></th> <td><a href="http://stay.hakonavi.ne.jp/yunokawa/index.html" target="_blank">函館湯の川温泉旅館組合</td></tr>
+       </table>
+     </div>
+     <div id="li-th">
+       <h2 id="tohoku">東北</h2>
+       <img src="image/back_th.png" alt="背景">
+       <div class="right">
+         <table class="t-right1">
+           <tr> <th>青森県</th> <td><a href="http://www.asamushi.com/" target="_blank">浅虫温泉旅館組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.aomoricolony.com/~owanionsen/pege/home.html" target="_blank">大鰐温泉旅館協同組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://kuroishi.or.jp/" target="_blank">黒石観光協会</a></td></tr>
+           <tr> <th></th> <td></td>
+           <tr> <th>岩手県</th> <td><a href="http://www.ousyukuonsen.com/" target="_blank">鴬宿温泉観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.hachimantai.or.jp/" target="_blank">八幡平市観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="https://www.hanamakionsen.co.jp/" target="_blank">花巻温泉</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.tsunagionsen.com/" target="_blank">つなぎ温泉観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.yamanoideyu.com/" target="_blank">西和賀町観光協会</a></td></tr>
+	         <tr> <th></th> <td><a href="http://www.daionsen-iwate.com/" target="_blank">台温泉旅館組合</a></td></tr>
+           <tr> <th></th> <td></td>
+           <tr> <th>秋田県</th> <td><a href="http://www.nyuto-onsenkyo.com/" target="_blank">乳頭温泉組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.ink.or.jp/~o-yu/" target="_blank">大湯温泉観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://e-ogaonsen.com/" target="_blank">	男鹿温泉郷協同組合</a></td></tr>
+           <tr> <th></th> <td></td>
+           <tr> <th>宮城県</th> <td><a href="http://www.naruko.gr.jp/" target="_blank">鳴子温泉郷観光協会</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.nakayamadaira.com/" target="_blank">中山平温泉協会</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.sakunami-spa.com/" target="_blank">作並温泉旅館組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.e-zao.net/e-u/" target="_blank">遠刈田温泉旅館協同組合</a></td></tr>
+         </table>
+         <table class="t-right2">
+           <tr> <th>山形県</th> <td><a href="http://www.zao-spa.or.jp/" target="_blank">蔵王温泉観光協会</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.chuokai-yamagata.or.jp/onogawa/" target="_blank">小野川源泉協同組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.higashineonsen.com/" target="_blank">東根温泉協同組合</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.atsumi-spa.or.jp/" target="_blank">	温海町観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.yunohamaonsen.com/" target="_blank">湯野浜温泉観光協会</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://kaminoyama-spa.com/" target="_blank">上山温泉</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.ginzanonsen.jp/" target="_blank">銀山温泉組合</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.akayu-onsen.com/" target="_blank">赤湯温泉旅館協同組合</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.tendoonsen.or.jp/" target="_blank">天童温泉協同組合</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.yutagawaonsen.com/" target="_blank">湯田川温泉観光協会</a></td></tr>
+           <tr> <th></th> <td></td>
+           <tr> <th>福島県</th> <td><a href="http://www.naf.co.jp/azumatakayu/welcome.stm" target="_blank">高湯温泉</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.iizaka.com/" target="_blank">飯坂温泉旅館協同組合</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.aizu-ashinomaki.jp/" target="_blank">芦ノ牧温泉観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.oze-info.jp/" target="_blank">尾瀬檜枝岐温泉</a></td></tr>
+  			   <tr> <th></th><td><a href="http://www.tcy.jp/" target="_blank">土湯温泉観光協会</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.dakeonsen.or.jp/" target="_blank">岳温泉観光協会</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.aizu-higashiyama.com/" target="_blank">東山温泉旅館協同組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.yunokamionsen.gr.jp/" target="_blank">湯野上温泉</a></td></tr>
+  	       <tr> <th></th> <td><a href="http://www.iwakiyumoto.or.jp/" target="_blank">いわき湯本温泉旅館組合</a></td></tr>
+	       </table>
+       </div>
+     </div>
+   </div>
+
+   <div class="table2">
+     <div id="li-kt">
+       <h2 id="kanto">関東</h2>
+       <img src="image/back_kt.png" alt="背景">
+       <div class="right">
+         <table class="t-right1">
+           <tr> <th>栃木県</th> <td><a href="http://www.nasuonsen.com/" target="_blank">那須温泉旅館協同組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://nikko.4-seasons.jp/index.shtml" target="_blank">日光観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.siobara.or.jp/" target="_blank">塩原温泉旅館協同組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.itamuro.com/" target="_blank">板室温泉旅館組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://yunishikawa-kawamata-okukinu.jp/" target="_blank">奥鬼怒温泉観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.nikkoyumoto.com/" target="_blank">奥日光湯本温泉協同組合</a></td></tr>
+           <tr> <th></th> <td></td>
+           <tr> <th>東京都</th> <td><a href="http://www.okutama-yado.gr.jp/" target="_blank">奥多摩温泉利用組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.izu-oshima.or.jp/" target="_blank">大島観光協会</a></td></tr>
+           <tr> <th></th> <td></td>
+           <tr> <th>神奈川</th> <td><a href="https://www.hakone.or.jp/" target="_blank">箱根町観光協会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.sengokuhara-onsen.com/" target="_blank">箱根仙石原温泉旅館組合</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.yugawara.or.jp/" target="_blank">湯河原温泉観光協会</td></tr>
+           <tr> <th></th> <td><a href="http://www.ohiradai.com/" target="_blank">大平台温泉組合</a></td></tr>
+           <tr> <th></th> <td></td>
+           <tr> <th>千葉県</th> <td><a href="http://www.kamogawaonsen.com/" target="_blank">鴨川温泉連絡協議会</a></td></tr>
+           <tr> <th></th> <td><a href="http://www.yorokeikoku.com/" target="_blank">養老渓谷旅館組合</td></tr>
+         </table>
+         <table class="t-right2">
+            <tr> <th>群馬県</th> <td><a href="https://www.kusatsu-onsen.ne.jp/" target="_blank">草津温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.kazawaonsen.com/" target="_blank">鹿沢温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.aquatree.net/siriyaki/" target="_blank">尻焼温泉</a></td></tr>
+            <tr> <th></th> <td><a href="http://spa-sawatari.jp/index.html" target="_blank">沢渡温泉組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.ikaho-kankou.com/" target="_blank">伊香保温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www12.wind.ne.jp/tanigawa-onsen/" target="_blank">谷川温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.oigami.net/" target="_blank">老神温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.manzaonsen.gr.jp/index.php" target="_blank">万座温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.kawarayu.jp/" target="_blank">川原湯温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://shimaonsen.com/" target="_blank">四万温泉協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.minakami-onsen.com/" target="_blank">水上町観光協会</a></td></tr>
+            <tr> <th></th> <td></td>
+          </table>
+       </div>
+     </div>
+     <div id="li-iz" class="left">
+	     <h2 id="izu">伊豆・静岡</h2>
+	     <img src="image/back_iz.png" alt="背景">
+	     <table class="t-left">
+          <tr> <th>静岡県</th> <td><a href="https://www.ataminews.gr.jp/" target="_blank">熱海市観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.izusan.com/" target="_blank">伊豆山温泉観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://itospa.com/" target="_blank">伊東観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.hokkawa-onsen.com/" target="_blank">北川温泉観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.kawazu-onsen.com/" target="_blank">河津温泉観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://hotel.shimoda100.com/" target="_blank">下田温泉旅館協同組合</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.toi-onsen.com/" target="_blank">土肥温泉旅館協同組合</a></td></tr>
+    			<tr> <th></th> <td><a href="http://izuspa.com/" target="_blank">伊豆長岡温泉旅館組合</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.amagigoe.jp/" target="_blank">天城観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.kanzanji.gr.jp/" target="_blank">舘山寺温泉観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.izuyugawara.gr.jp/" target="_blank">伊豆湯河原温泉観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.ajirospa.com/" target="_blank">網代温泉観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.atagawa.net/" target="_blank">熱川温泉旅館組合</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.inatorionsen.or.jp/" target="_blank">稲取温泉旅館協同組合</a></td></tr>
+    			<tr> <th></th> <td><a href="https://www.nanadaru.com/" target="_blank">河津七滝観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://www.minami-izu.jp/" target="_blank">南伊豆町観光協会</a></td></tr>
+    			<tr> <th></th> <td><a href="http://shuzenji.info/" target="_blank">修善寺温泉旅館協同組合</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="table2">
+      <div id="li-ks">
+        <h2 id="koshinetsu">甲信越</h2>
+        <img src="image/back_ks.png" alt="背景">
+        <div class="right">
+          <table class="t-right1">
+            <tr> <th>山梨県</th> <td><a href="http://www.isawaonsen.or.jp/" target="_blank">石和温泉旅館協同組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.fujikawaguchiko.net/" target="_blank">河口湖温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.yumura.com/" target="_blank">湯村温泉旅館協同組合</a></td></tr>
+            <tr> <th></th> <td></td>
+            <tr> <th>新潟県</th> <td><a href="https://www.snow-country-tourism.jp/" target="_blank">湯沢温泉総合案内所</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.muikamachi-onsen.jp/" target="_blank">六日町温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.e-yahiko.com/" target="_blank">弥彦観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.akakura.gr.jp/" target="_blank">赤倉温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.senami.or.jp/" target="_blank">瀬波温泉共栄会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.sakihana.jp/" target="_blank">咲花温泉旅館協同組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://e-yuzawa.com/iwappara/" target="_blank">岩原観光温泉組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.matsunoyama.com/" target="_blank">松之山温泉組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.iwamuro-onsen.com/" target="_blank">岩室温泉郷</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.shin-aka.com/" target="_blank">新赤倉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.tsukiokaonsen.gr.jp/" target="_blank">月岡温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://gozu.jp/" target="_blank">五頭温泉郷旅館協同組合</a></td></tr>
+          </table>
+          <table class="t-right2">
+            <tr> <th>長野県</th> <td><a href="http://www.avis.ne.jp/~yudanaka/" target="_blank">湯田中温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.avis.ne.jp/~honami/" target="_blank">湯田中温泉穂波旅館組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.kanbayashi-onsen.com/" target="_blank">上林温泉旅館組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://members.stvnet.home.ne.jp/hin-nobe/html/" target="_blank">高山温泉郷観光協会</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.kakeyu.or.jp/" target="_blank">鹿教湯温泉旅館組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.mcci.or.jp/www/utsukushi/" target="_blank">美ヶ原温泉旅館組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.suwako-onsen.com/" target="_blank">諏訪湖温泉旅館組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.spa-norikura.com/" target="_blank">乗鞍高原温泉組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.omachionsen.jp/" target="_blank">大町温泉郷観光協会</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.shibuonsen.net/" target="_blank">渋温泉旅館組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.kakumaonsen.jp/" target="_blank">角間温泉旅館組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.asamaonsen.com/" target="_blank">浅間温泉旅館協同組合</a></td></tr>
+      			<tr> <th></th> <td><a href="http://www.hotakaonsen.com/" target="_blank">穂高温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://shimosuwa.com/" target="_blank">下諏訪観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.sawando.ne.jp/" target="_blank">さわんど温泉</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.shirahone.org/" target="_blank">白骨温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://hayataro.org/" target="_blank">早太郎温泉郷</a></td></tr>
+          </table>
+        </div>
+      </div>
+      <div id="li-hk" class="left">
+        <h2 id="hokuriku">北陸</h2>
+        <img src="image/back_hk.png" alt="背景">
+        <table class="t-left">
+      		<tr> <th>石川県</th> <td><a href="http://www.awazuonsen.com/" target="_blank">粟津温泉観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.yamanaka-spa.or.jp/" target="_blank">山中温泉観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.wakura.or.jp/" target="_blank">和倉温泉観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="http://ichirino.gr.jp/" target="_blank">白山一里野温泉観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.yamashiro-spa.or.jp/" target="_blank">山代温泉旅館協同組合</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.katayamazu-spa.or.jp/" target="_blank">片山津温泉観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="http://yuwaku.gr.jp/" target="_blank">湯涌温泉観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="https://www.chuguonsen.com/" target="_blank">中宮温泉</a></td></tr>
+          <tr> <th></th> <td></td>
+          <tr> <th>福井県</th> <td><a href="http://www.awara-onsen.org/html/index2.html" target="_blank">芦原温泉旅館協同組合</a></td></tr>
+      		<tr> <th></th> <td><a href="http://tamagawaonsen.net/" target="_blank">玉川温泉観光協会</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="table">
+      <div id="li-ty" class="left">
+        <h2 id="tyubu">中部</h2>
+        <img src="image/back_ty.png" alt="背景">
+        <table class="t-left">
+          <tr> <th>岐阜県</th> <td><a href="http://www.okuhida.or.jp/" target="_blank">奥飛騨温泉郷観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="https://www.fukujionsen.com/" target="_blank">福地温泉</a></td></tr>
+      		<tr> <th></th> <td><a href="http://nagaragawa.org/" target="_blank">長良川温泉旅館協同組合</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.gero-spa.or.jp/" target="_blank">下呂温泉旅館協同組合</a></td></tr>
+          <tr> <th></th> <td></td>
+          <tr> <th>愛知県</th> <td><a href="http://www.miyaspa.com/" target="_blank">三谷温泉観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.katahara-spa.jp/" target="_blank">形原観光協会</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.nishiuraonsen.com/" target="_blank">西浦温泉</a></td></tr>
+        </table>
+      </div>
+      <div id="li-kk">
+        <h2 id="kinki">近畿</h2>
+        <img src="image/back_kk.png" alt="背景">
+        <div class="right">
+           <table class="t-right1">
+             <tr> <th>三重県</th> <td><a href="http://cniss.chuokai-mie.or.jp/hamajima/" target="_blank">浜島温泉協同組合</a></td></tr>
+             <tr> <th></th> <td><a href="http://www.sakakibaraonsen.gr.jp/" target="_blank">榊原温泉振興協会</a></td></tr>
+             <tr> <th></th> <td></td>
+             <tr> <th>京都府</th> <td><a href="http://www.tango.or.jp/amanohashidate/" target="_blank">天橋立観光協会</a></td></tr>
+             <tr> <th></th> <td></td>
+             <tr> <th>奈良県</th> <td><a href="http://www.dorogawaonsen.jp/" target="_blank">大峯山洞川温泉観光協会</a></td></tr>
+             <tr> <th></th> <td><a href="http://www.onsen.yoshino.jp/" target="_blank">吉野路温泉協議会</a></td></tr>
+           </table>
+           <table class="t-right2">
+             <tr> <th>兵庫県</th> <td><a href="http://www.kinosaki-spa.gr.jp/" target="_blank">城崎温泉観光協会</a></td></tr>
+             <tr> <th></th> <td><a href="http://www.yumura.gr.jp/" target="_blank">湯村温泉旅館料飲組合</a></td></tr>
+             <tr> <th></th> <td><a href="http://www.arima-onsen.com/" target="_blank">有馬温泉観光協会</a></td></tr>
+             <tr> <th></th> <td><a href="http://www.hamasaka.com/" target="_blank">浜坂温泉</a></td></tr>
+           </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="table">
+	     <div id="li-tg" class="left">
+	       <h2 id="tyugoku">中国</h2>
+	       <img src="image/back_tg.png" alt="背景">
+         <table class="t-left">
+      		<tr> <th>岡山県</th> <td><a href="http://spa-yunogo.or.jp/" target="_blank">湯郷温泉旅館協同組合</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.okayama-spa.jp/" target="_blank">岡山市温泉協同組合</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.yubara.com/" target="_blank">湯原町旅館協同組合</a></td></tr>
+          <tr> <th></th> <td></td>
+          <tr> <th>鳥取県</th> <td><a href="http://www.kaike-onsen.com/new/JP/" target="_blank">皆生温泉旅館組合</a></td></tr>
+          <tr> <th></th> <td></td>
+          <tr> <th>島根県</th> <td><a href="http://tamayado.com/" target="_blank">玉造温泉組合</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.yunokawaonsen.jp/" target="_blank">湯の川温泉</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www.mimataonsen.com/" target="_blank">美又温泉</a></td></tr>
+      		<tr> <th></th> <td><a href="http://www2.crosstalk.or.jp/yunotsu/" target="_blank">温泉津町観光協会</a></td></tr>
+        </table>
+      </div>
+      <div id="li-ky">
+        <h2 id="kyusyu">九州</h2>
+        <img src="image/back_ky.png" alt="背景">
+        <div class="right">
+          <table class="t-right1">
+            <tr> <th>福岡県</th> <td><a href="http://www.harazuru.jp/" target="_blank">原鶴温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td></td>
+            <tr> <th>佐賀県</th> <td><a href="http://spa-u.net/" target="_blank">嬉野温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.fuji-spa.com/" target="_blank">古湯・熊の川温泉郷</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.takeo-kk.net/" target="_blank">武雄市観光協会</a></td></tr>
+            <tr> <th></th> <td></td>
+            <tr> <th>熊本県</th> <td><a href="http://www.kurokawaonsen.or.jp/" target="_blank">黒川温泉観光旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.kikuchionsen.jp/" target="_blank">菊池温泉郷観光旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.y-kankoukyoukai.com/" target="_blank">山鹿温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.hinagu.jp/" target="_blank">日奈久温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://onsen.aso.ne.jp/" target="_blank">南阿蘇温泉郷</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.tuetate.jp/" target="_blank">杖立温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.otaonsen.jp/" target="_blank">小田温泉</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.hirayama-onsen.jp/" target="_blank">平山温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://amakusa-shimoda-onsen.jp/" target="_blank">天草下田温泉</a></td></tr>
+          </table>
+          <table class="t-right2">
+            <tr> <th>長崎県</th> <td><a href="http://www.unzen.org/" target="_blank">雲仙観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.shimabaraonsen.com/" target="_blank">島原温泉観光協会</a></td></tr>
+            <tr> <th></th> <td></td>
+            <tr> <th>大分県</th> <td><a href="http://www.gokuraku-jigoku-beppu.com/" target="_blank">別府市観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.yufuin.gr.jp/" target="_blank">由布院温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.nagayu-onsen.com/index.php" target="_blank">長湯温泉旅館組合</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.sujiyu-onsen.com/" target="_blank">筋湯温泉観光協会</a></td></tr>
+            <tr> <th></th> <td></td>
+            <tr> <th>宮崎県</th> <td><a href="http://www.tamayura.net/" target="_blank">宮崎リゾート温泉</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.myoken-onsen.com/" target="_blank">妙見温泉観光協会</a></td></tr>
+            <tr> <th></th> <td><a href="http://www.miya-shoko.or.jp/takaharu/onsengou/index.html" target="_blank">たかはる温泉郷</a></td></tr>
+            <tr> <th></th> <td><a href="http://kirishimakankou.com/" target="_blank">大霧島観光協会</a></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="table">
+      <div id="li-sk" class="left">
+        <h2 id="shikoku">四国</h2>
+        <img src="image/back_sk.png" alt="背景">
+        <table class="t-left">
+          <tr>　<th>愛媛県</th>　<td><a href="http://www.dogo.or.jp/pc/" target="_blank">道後温泉旅館協同組合</a></td></tr>
+        </table>
+      </div>
+    </div>
+    <!--上に戻る-->
+    <a class="back-m" href="#map">▲地図に戻る▲</a>
+    <a class="back-bt" href="#back">▲リストに戻る▲</a>
+</div>
+<!--ここまで-->
 
 <div class="kakomi">
 <section class="yukoyuko">
@@ -238,7 +565,8 @@ $(document).ready(function(){
 <a href="http://px.a8.net/svt/ejp?a8mat=2HZ158+1LR2GI+1CGQ+BYLJL" target="_blank"><img src="image/banner2.jpg" width="310" height="40" alt="名鉄観光" class="meitetu"></a>
 </section>
 </div>
-</div><!--mian_end-->
+
+</div><!--main_end-->
 
 
         <div id="anchor_link">
